@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" className="scroll-smooth">
+	<head>
+		<meta charset="utf-8" />
+		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
+
+		<meta name="msapplication-TileColor" content="#000000" />
+		<meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff" />
+		<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000" />
+		<link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.ico" />
+		<!-- <link rel="manifest" href="/static/favicons/site.webmanifest" /> -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		%sveltekit.head%
+	</head>
+	<!-- <body class="flex flex-col h-screen"> -->
+	<body
+		class="bg-white text-black antialiased dark:bg-gray-900 dark:text-white"
+		data-sveltekit-prefetch
+	>
+		%sveltekit.body%
+	</body>
+</html>

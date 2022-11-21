@@ -1,0 +1,73 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: static/img # Folder where user uploaded files should go
+public_folder: /img
+
+search: false
+
+slug:
+  encoding: ascii
+  clean_accents: true
+  sanitize_replacement: '-'
+
+collections:
+  - name: notes # Used in routes, e.g., /admin/collections/blog
+    identifier_field: title
+    label: Notes # Used in the UI
+    folder: content/notes # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: Title, name: title, widget: string }
+      - { label: Subtitle, name: subtitle, widget: string, required: false }
+      - { label: Type, name: type, widget: select, options: ['note'], default: 'note' }
+      - { label: Date, name: date, widget: date, format: 'YYYY-MM-DD' }
+      - { label: Rtl, name: rtl, widget: boolean, required: false }
+      - { label: Hidden, name: hidden, widget: boolean, default: false, required: false }
+      - { label: 'Note', name: 'body', widget: 'markdown' }
+  - name: projects # Used in routes, e.g., /admin/collections/blog
+    identifier_field: title
+    label: Projects # Used in the UI
+    folder: content/projects # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: Title, name: title, widget: string }
+      - {
+          label: Type,
+          name: type,
+          widget: select,
+          options:
+            [
+              'company',
+              'interview',
+              'music video',
+              'production',
+              'project',
+              'other - aware',
+              'other - design',
+              'other - paper',
+              'other - panel',
+              'other - reportage',
+              'other - video'
+            ]
+        }
+      - {
+          label: Image,
+          name: img,
+          widget: image,
+          choose_url: false,
+          allow_multiple: false,
+          required: false
+        }
+      - { label: Date, name: date, widget: date }
+      - { label: Wide, name: wide, widget: boolean, required: false }
+      - { label: Rtl, name: rtl, widget: boolean, required: false }
+      - { label: Hidden, name: hidden, widget: boolean, default: false, required: false }
+      - { label: Video, name: video, widget: string, required: false }
+      - { label: Twitter, name: twitter, widget: string, required: false }
+      - { label: Source, name: source, widget: string, required: false }
+      - { label: Excerpt, name: excerpt, widget: text, required: false }
+      - { label: 'Content', name: 'body', widget: 'markdown' }
