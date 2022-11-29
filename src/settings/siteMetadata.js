@@ -18,7 +18,7 @@ const siteMetadata = {
 	youtube: 'https://youtube.com',
 	linkedin: 'https://www.linkedin.com',
 	locale: 'en-US',
-	brandColor: '#ff3e00',
+	primaryColor: '#6366f1',
 	og: {
 		width: 1200,
 		height: 630

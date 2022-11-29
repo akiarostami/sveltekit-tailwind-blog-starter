@@ -3,7 +3,7 @@
 	export let text = 'Official Website';
 	import siteMetadata from '$settings/siteMetadata';
 	const height = siteMetadata.og.height;
-	const color = siteMetadata.brandColor;
+	const color = siteMetadata.primaryColor;
 	const barWidth = 140;
 </script>
 

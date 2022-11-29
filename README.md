@@ -41,6 +41,7 @@ This is my first attempt to write something in Sveltekit.
 - [ ] Pagination
 - [ ] Search (fuse.js or [alternatives](https://github.com/leeoniya/uFuzzy#user-content-benchmark))
 - [x] SEO friendly with RSS feed, sitemaps and more!
+- [ ] SEO OpenGraph Info
 
 ## Quick Start Guide
 
