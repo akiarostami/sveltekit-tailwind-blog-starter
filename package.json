@@ -1,5 +1,5 @@
 {
-	"name": "Sveltekit Tailwind Netlify CMS Blog Starter Kit",
+	"name": "Sveltekit Tailwind Blog Starter Kit",
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {

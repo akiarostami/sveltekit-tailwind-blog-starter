@@ -1,12 +1,10 @@
 # Tailwind Sveltekit Starter Blog
 
-### Based on Timothy Lin's [Tailwind Nextjs Started Blog](https://github.com/timlrx/tailwind-nextjs-starter-blog)
-
-This is a [Sveltekit](https://kit.svelte.dev/), [Tailwind CSS](https://tailwindcss.com/) blogging starter template, heavily based on [Timothy Lin](https://github.com/timlrx/)'s [Tailwind Nextjs Started Blog](https://github.com/timlrx/tailwind-nextjs-starter-blog), plus and minus some features. Just like Timothy's wonderful starter kit, it is a feature-rich markdown blogging template, easily configurable and customizable. On top of features inherited from Timothy's template, it also supports og:image and Netlify CMS with a minimal configuration.
+This is a [Sveltekit](https://kit.svelte.dev/) + [Tailwind CSS](https://tailwindcss.com/) blogging starter template with markdown support and easily configurable and customizable. It is inspired by [Timothy Lin](https://github.com/timlrx/)'s [Tailwind Nextjs Started Blog](https://github.com/timlrx/tailwind-nextjs-starter-blog), plus (and minus) some features. Most important added features to Timothy's template are og:image and Netlify CMS support with a minimal configuration.
 
 ## Motivation
 
-I've been looking for a good, flexible template for Sveltekit / Tailwind, but all I found was either too simple and didn't have the basic features, or was too difficult to customize (or both). I loved the simple but feature-rich template of Timothy for Next.js, so I decided to port that to Sveltekit, and add a couple of things I wish it had: Netlify CMS and dynamic og:image.
+I've been looking for a good, flexible template for Sveltekit / Tailwind, but all templates I found were either too simple and didn't have some needed features, or were too difficult to customize (or both). I loved Timothy Lin's simple but feature-rich template for Next.js, so I decided to port that to Sveltekit, and add a couple of things I needed: Netlify CMS and dynamic og:image.
 
 This is my first attempt to write something in Sveltekit.
 
@@ -16,8 +14,12 @@ This is my first attempt to write something in Sveltekit.
 - [x] Easy style customization with [Tailwind 3.0](https://tailwindcss.com/blog/tailwindcss-v3)
 - [x] Great lighthouse score - [Lighthouse report](https://www.webpagetest.org/result/210111_DiC1_08f3670c3430bf4a9b76fc3b927716c5/)
 - [x] Mobile-friendly view
-- [x] Support for Light and dark theme
 - [x] Markdown support
+- [x] Support for Light and dark theme
+- [x] Support for tags - each unique tag will be its own page
+- [x] Support for Pre-render
+- [x] og:image
+- [x] SEO friendly with RSS feed, sitemaps and more!
 - [ ] Markdown components
   - [ ] Links
   - [ ] Video
@@ -26,9 +28,7 @@ This is my first attempt to write something in Sveltekit.
   - [ ] [plausible](https://plausible.io/)
   - [ ] [simple analytics](https://simpleanalytics.com/)
   - [ ] google analytics
-- [x] Support for tags - each unique tag will be its own page
 - [ ] Support for multiple authors
-- [x] Support for Pre-render
 - [ ] Support for different Newsletter system
   - [ ] mailchimp
   - [ ] buttondown
@@ -36,44 +36,25 @@ This is my first attempt to write something in Sveltekit.
   - [ ] klaviyo
   - [ ] revue
   - [ ] emailoctopus
-- [x] og:image
 - [ ] Netlify CMS
 - [ ] Pagination
 - [ ] Search (fuse.js or [alternatives](https://github.com/leeoniya/uFuzzy#user-content-benchmark))
-- [x] SEO friendly with RSS feed, sitemaps and more!
 - [ ] SEO OpenGraph Info
 
 ## Quick Start Guide
 
-1. Try installing the starter using the new [Pliny project CLI](https://github.com/timlrx/pliny):
+1. Installing the starter
 
 ```bash
-npm i -g @pliny/cli
-pliny new --template=starter-blog my-blog
-```
-
-It supports the updated version of the blog with Contentlayer, optional choice of TS/JS and different package managers as well as more modularized components which will be the basis of the template going forward.
-
-Alternatively to stick with the current version, TypeScript and Contentlayer:
-
-```bash
-npx degit 'timlrx/tailwind-nextjs-starter-blog#contentlayer'
-```
-
-or JS (official support)
-
-```bash
-npx degit https://github.com/timlrx/tailwind-nextjs-starter-blog.git
+npx degit https://github.com/akiarostami/sveltekit-tailwind-blog-starter
 ```
 
 2. Personalize `siteConfig.js` (site related information)
-3. Modify the content security policy in `next.config.js` if you want to use
-   any analytics provider or a commenting solution other than giscus.
-4. Personalize `authors/default.md` (main author)
-5. Modify `projectsData.js`
-6. Modify `headerNavLinks.js` to customize navigation links
-7. Add blog posts
-8. Deploy on Vercel
+3. Personalize `authors/default.md` (main author)
+4. Modify `projectsData.js`
+5. Modify `headerNavLinks.js` to customize navigation links
+6. Add blog posts
+7. Deploy on Netlify
 
 ## Installation
 
@@ -95,9 +76,9 @@ or
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your local host (probably [http://localhost:5173/](http://localhost:5173/)) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+You can start editing the pages under `routes`.
 
 ## Extend / Customize
 
@@ -117,19 +98,13 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 `tailwind.config.js` and `css/tailwind.css` - contain the tailwind stylesheet which can be modified to change the overall look and feel of the site.
 
-`css/prism.css` - controls the styles associated with the code blocks. Feel free to customize it and use your preferred prismjs theme e.g. [prism themes](https://github.com/PrismJS/prism-themes).
-
-`components/social-icons` - to add other icons, simply copy an svg file from [Simple Icons](https://simpleicons.org/) and map them in `index.js`. Other icons use [heroicons](https://heroicons.com/).
-
 `components/MDXComponents.js` - pass your own JSX code or React component by specifying it over here. You can then call them directly in the `.mdx` or `.md` file. By default, a custom link and image component is passed.
 
 `layouts` - main templates used in pages.
 
 `pages` - pages to route to. Read the [Next.js documentation](https://nextjs.org/docs) for more information.
 
-`next.config.js` - configuration related to Next.js. You need to adapt the Content Security Policy if you want to load scripts, images etc. from other domains.
-
-`og:image` - font directory is needed for and used in og:image
+`fonts` - Opan Graph Image (og:image) needs a local copy of the fonts (under `src/lib/fonts`) you use for the OG image.
 
 ## Netlify CMS configuration
 
@@ -145,8 +120,8 @@ The API routes used in the newsletter component cannot be used in a static site 
 
 ## Support
 
-Using the template? Support this effort by giving a star on GitHub, sharing your own blog and giving a shoutout on Twitter or becoming a project [sponsor](https://github.com/sponsors/timlrx).
+Support this template and effort by giving it a star on GitHub, sharing your own blog, and giving a shout-out on Twitter.
 
-## Licence
+## License
 
-[MIT](https://github.com/timlrx/tailwind-nextjs-starter-blog/blob/master/LICENSE) © [Timothy Lin](https://www.timlrx.com)
+[MIT](https://github.com/akiarostami/sveltekit-tailwind-blog-starter/blob/master/LICENSE) © [Ahmad Kiarostami](https://www.ahmadkiarostami.com)

@@ -7,10 +7,9 @@ const siteConfig = {
 	theme: 'dark', // system, dark or light
 	domain: 'www.mysite.com',
 	siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
-	siteRepo: 'https://github.com/akiarostami/tailwind-nextjs-starter-blog',
+	siteRepo: 'https://github.com/akiarostami/sveltekit-tailwind-blog-starter',
 	siteLogo: '/img/logo.png',
 	image: '/img/avatar.png',
-	socialBanner: '/img/twitter-card.png',
 	email: 'address@yoursite.com',
 	github: 'https://github.com',
 	twitter: 'https://twitter.com/Twitter',
