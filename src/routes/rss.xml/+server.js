@@ -1,5 +1,5 @@
 import RSS from 'rss';
-import siteMetadata from '$settings/siteMetadata.js';
+import siteConfig from '$settings/siteConfig.js';
 import { posts } from '$lib/data/posts';
 
 export const prerender = true;
@@ -8,15 +8,15 @@ export const prerender = true;
 /** @type {import('@sveltejs/kit').RequestHandler} */
 export async function GET() {
 	const feed = new RSS({
-		title: siteMetadata.title + ' - RSS Feed',
-		site_url: siteMetadata.siteUrl,
-		feed_url: siteMetadata.siteUrl + '/rss.xml'
+		title: siteConfig.title + ' - RSS Feed',
+		site_url: siteConfig.siteUrl,
+		feed_url: siteConfig.siteUrl + '/rss.xml'
 	});
 
 	posts.forEach((posts) => {
 		feed.item({
 			title: posts.title,
-			url: siteMetadata.siteUrl + `/${posts.slug}`,
+			url: siteConfig.siteUrl + `/${posts.slug}`,
 			date: posts.date,
 			description: posts.summary
 		});

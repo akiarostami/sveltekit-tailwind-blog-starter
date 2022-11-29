@@ -1,5 +1,5 @@
 <script>
-	import siteMetadata from '$settings/siteMetadata';
+	import siteConfig from '$settings/siteConfig';
 	import headerNavLinks from '$settings/headerNavLinks.js';
 	import ThemeSwitch from '$lib/components/ThemeSwitch.svelte';
 	import MobileMenu from '$lib/components/MobileMenu.svelte';
@@ -7,13 +7,13 @@
 
 <header class="flex items-center justify-between py-10">
 	<div>
-		<a href="/" aria-label={siteMetadata.headerTitle}>
+		<a href="/" aria-label={siteConfig.headerTitle}>
 			<div class="flex items-center justify-between">
 				<div class="mr-3">
 					<img src="/logo.svg" alt="Logo" class="h-10 w-auto" />
 				</div>
 				<div class="hidden h-6 text-2xl font-semibold sm:block">
-					{siteMetadata.headerTitle}
+					{siteConfig.headerTitle}
 				</div>
 			</div>
 		</a>

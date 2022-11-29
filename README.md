@@ -36,7 +36,7 @@ This is my first attempt to write something in Sveltekit.
   - [ ] klaviyo
   - [ ] revue
   - [ ] emailoctopus
-- [ ] og:image
+- [x] og:image
 - [ ] Netlify CMS
 - [ ] Pagination
 - [ ] Search (fuse.js or [alternatives](https://github.com/leeoniya/uFuzzy#user-content-benchmark))
@@ -66,7 +66,7 @@ or JS (official support)
 npx degit https://github.com/timlrx/tailwind-nextjs-starter-blog.git
 ```
 
-2. Personalize `siteMetadata.js` (site related information)
+2. Personalize `siteConfig.js` (site related information)
 3. Modify the content security policy in `next.config.js` if you want to use
    any analytics provider or a commenting solution other than giscus.
 4. Personalize `authors/default.md` (main author)
@@ -101,7 +101,7 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 ## Extend / Customize
 
-`data/siteMetadata.js` - contains most of the site related information which should be modified for a user's need.
+`data/siteConfig.js` - contains most of the site related information which should be modified for a user's need.
 
 `data/authors/default.md` - default author information (required). Additional authors can be added as files in `data/authors`.
 

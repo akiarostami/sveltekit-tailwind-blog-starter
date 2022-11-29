@@ -1,18 +1,18 @@
 <script>
-	import siteMetadata from '$settings/siteMetadata.js';
+	import siteConfig from '$settings/siteConfig.js';
 
 	export let title = 'Official Website';
-	export let description = siteMetadata.description;
-	export let author = siteMetadata.author;
-	export let url = siteMetadata.siteUrl;
-	export let domain = siteMetadata.domain;
+	export let description = siteConfig.description;
+	export let author = siteConfig.author;
+	export let url = siteConfig.siteUrl;
+	export let domain = siteConfig.domain;
 	export let rtl = false;
 	let titleFromUrl = url.split('/').pop().replace('-', ' ');
 	export let img = `${url}/og?message=${rtl ? titleFromUrl : title}`;
 </script>
 
 <svelte:head>
-	<title>{title} | {siteMetadata.title}</title>
+	<title>{title} | {siteConfig.title}</title>
 	<meta name="description" content={description} />
 	<meta name="author" content={author} />
 

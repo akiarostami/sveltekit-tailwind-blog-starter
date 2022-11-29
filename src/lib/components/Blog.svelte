@@ -1,6 +1,5 @@
 <script>
-	import siteMetadata from '$settings/siteMetadata.js';
-	import formatDate from '$utils/formatDate';
+	import siteConfig from '$settings/siteConfig.js';
 	import Tag from '$lib/components/Tag.svelte';
 
 	export let post;
@@ -17,7 +16,7 @@
 							<dt class="sr-only">Published on</dt>
 							<dd class="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
 								<time dateTime={post.date}>
-									{new Date(post.date).toLocaleDateString(siteMetadata.locale, {
+									{new Date(post.date).toLocaleDateString(siteConfig.locale, {
 										weekday: 'long',
 										year: 'numeric',
 										month: 'long',

@@ -1,13 +1,13 @@
-const siteMetadata = {
-	title: 'Next.js Starter Blog',
-	author: 'Tails Azimuth',
+const siteConfig = {
+	title: 'Sveltekit Tailwind Blog Starter',
+	author: 'Ahmad Kiarostami',
 	headerTitle: 'TailwindBlog',
-	description: 'A blog created with Next.js and Tailwind.css',
+	description: 'A blog created with Sveltekit and Tailwind.css',
 	language: 'en-us',
-	theme: 'system', // system, dark or light
+	theme: 'dark', // system, dark or light
 	domain: 'www.mysite.com',
 	siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
-	siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
+	siteRepo: 'https://github.com/akiarostami/tailwind-nextjs-starter-blog',
 	siteLogo: '/img/logo.png',
 	image: '/img/avatar.png',
 	socialBanner: '/img/twitter-card.png',
@@ -19,7 +19,9 @@ const siteMetadata = {
 	linkedin: 'https://www.linkedin.com',
 	locale: 'en-US',
 	primaryColor: '#6366f1',
+	multiuser: false,
 	og: {
+		enabled: true,
 		width: 1200,
 		height: 630
 	},
@@ -92,4 +94,4 @@ const siteMetadata = {
 */
 };
 
-export default siteMetadata;
+export default siteConfig;

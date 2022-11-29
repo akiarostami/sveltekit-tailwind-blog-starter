@@ -4,6 +4,7 @@
 	import Title from '$lib/components/Title.svelte';
 
 	const info = {
+		id: 'admin',
 		name: 'Tails Azimuth',
 		avatar: '/img/avatar.png',
 		occupation: 'Professor of Atmospheric Science',
@@ -11,7 +12,22 @@
 		email: 'address@yoursite.com',
 		twitter: 'https://twitter.com/Twitter',
 		linkedin: 'https://www.linkedin.com',
-		github: 'https://github.com'
+		github: 'https://github.com',
+		about: `
+			<p>
+				Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His research
+				interests includes complexity modelling of tailwinds, headwinds and crosswinds.
+			</p>
+			<p>
+				He leads the clean energy group which develops 3D air pollution-climate models, writes
+				differential equation solvers, and manufactures titanium plated air ballons. In his free
+				time he bakes raspberry pi.
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat
+				feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu
+				pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+			</p>`
 	};
 </script>
 
@@ -34,21 +50,6 @@
 				<SocialIcon icon="twitter" url={info.twitter} />
 			</div>
 		</div>
-		<div class="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">
-			<p>
-				Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His research
-				interests includes complexity modelling of tailwinds, headwinds and crosswinds.
-			</p>
-			<p>
-				He leads the clean energy group which develops 3D air pollution-climate models, writes
-				differential equation solvers, and manufactures titanium plated air ballons. In his free
-				time he bakes raspberry pi.
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat
-				feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu
-				pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
-			</p>
-		</div>
+		<div class="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">{@html info.about}</div>
 	</div>
 </div>

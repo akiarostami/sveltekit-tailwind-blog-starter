@@ -173,7 +173,7 @@ You need to pass the layout name from the layout folder (it has to be an exact m
 ## Analytics
 
 The template now supports [plausible](https://plausible.io/), [simple analytics](https://simpleanalytics.com/) and google analytics.
-Configure `siteMetadata.js` with the settings that correspond with the desired analytics provider.
+Configure `siteConfig.js` with the settings that correspond with the desired analytics provider.
 
 ```js
 analytics: {
@@ -191,7 +191,7 @@ documentation for more information.
 ## Blog comments system
 
 We have also added support for [giscus](https://github.com/laymonage/giscus), [utterances](https://github.com/utterance/utterances) or disqus.
-To enable, simply configure `siteMetadata.js` comments property with the desired provider and settings as specified in the config file.
+To enable, simply configure `siteConfig.js` comments property with the desired provider and settings as specified in the config file.
 
 ```js
 comment: {
@@ -240,7 +240,7 @@ comment: {
 
 ## Multiple authors
 
-Information on authors is now split from `siteMetadata.js` and stored in its own `data/authors` folder as a markdown file. Minimally, you will need to have a `default.md` file with authorship information. You can create additional files as required and the file name will be used as the reference to the author.
+Information on authors is now split from `siteConfig.js` and stored in its own `data/authors` folder as a markdown file. Minimally, you will need to have a `default.md` file with authorship information. You can create additional files as required and the file name will be used as the reference to the author.
 
 Here's how an author markdown file might look like:
 

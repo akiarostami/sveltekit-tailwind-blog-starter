@@ -19,13 +19,13 @@
 		{ caption: 'twitter', component: IconTwitter }
 	];
 
-	let disabled = !url;
-
 	let svg = options.find((option) => option.caption === icon)?.component;
 </script>
 
-<a href={url || '#'} {disabled} target={popup ? '_blank' : ''} rel="noreferrer">
-	<span class="sr-only">{icon}</span>
-	<svelte:component this={svg} class="w-7 text-gray-500 transition hover:text-primary-600" />
-	<slot />
-</a>
+{#if url}
+	<a href={url || '#'} target={popup ? '_blank' : ''} rel="noreferrer">
+		<span class="sr-only">{icon}</span>
+		<svelte:component this={svg} class="w-7 text-gray-500 transition hover:text-primary-600" />
+		<slot />
+	</a>
+{/if}

@@ -1,7 +1,7 @@
-import siteMetadata from '$settings/siteMetadata.js';
+import siteConfig from '$settings/siteConfig.js';
 
 const formatDate = (date) => {
-	return new Date(date).toLocaleDateString(siteMetadata.locale, {
+	return new Date(date).toLocaleDateString(siteConfig.locale, {
 		year: 'numeric',
 		month: 'long',
 		day: 'numeric'

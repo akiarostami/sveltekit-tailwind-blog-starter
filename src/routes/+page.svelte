@@ -1,5 +1,5 @@
 <script>
-	import siteMetadata from '$settings/siteMetadata.js';
+	import siteConfig from '$settings/siteConfig.js';
 	import Head from '$lib/Head.svelte';
 	import Blogs from '$lib/components/Blogs.svelte';
 
@@ -21,4 +21,4 @@
 	</h2>
 </div>
 
-<Blogs title="Latest" h2={true} subtitle={siteMetadata.description} {posts} search={false} />
+<Blogs title="Latest" h2={true} subtitle={siteConfig.description} {posts} search={false} />

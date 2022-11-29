@@ -98,7 +98,7 @@ or JS (official support)
 npx degit https://github.com/timlrx/tailwind-nextjs-starter-blog.git
 ```
 
-2. Personalize `siteMetadata.js` (site related information)
+2. Personalize `siteConfig.js` (site related information)
 3. Modify the content security policy in `next.config.js` if you want to use
    any analytics provider or a commenting solution other than giscus.
 4. Personalize `authors/default.md` (main author)
@@ -123,7 +123,7 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 ## Extend / Customize
 
-`data/siteMetadata.js` - contains most of the site related information which should be modified for a user's need.
+`data/siteConfig.js` - contains most of the site related information which should be modified for a user's need.
 
 `data/authors/default.md` - default author information (required). Additional authors can be added as files in `data/authors`.
 
@@ -166,7 +166,7 @@ tags (required, can be empty array)
 lastmod (optional)
 draft (optional)
 summary (optional)
-images (optional, if none provided defaults to socialBanner in siteMetadata config)
+images (optional, if none provided defaults to socialBanner in siteConfig config)
 authors (optional list which should correspond to the file names in `data/authors`. Uses `default` if none is specified)
 layout (optional list which should correspond to the file names in `data/layouts`)
 canonicalUrl (optional, canonical url for the post for SEO)

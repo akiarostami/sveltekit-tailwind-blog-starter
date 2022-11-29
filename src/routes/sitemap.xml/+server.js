@@ -1,4 +1,4 @@
-import siteMetadata from '$settings/siteMetadata.js';
+import siteConfig from '$settings/siteConfig.js';
 import { posts } from '$lib/data/posts';
 
 export const prerender = true;
@@ -25,7 +25,7 @@ const sitemap = (posts, pages) => `<?xml version="1.0" encoding="UTF-8" ?>
     xmlns:video="https://www.google.com/schemas/sitemap-video/1.1"
   >
     <url>
-      <loc>${siteMetadata.siteUrl}</loc>
+      <loc>${siteConfig.siteUrl}</loc>
       <changefreq>daily</changefreq>
       <priority>0.7</priority>
     </url>
@@ -33,7 +33,7 @@ const sitemap = (posts, pages) => `<?xml version="1.0" encoding="UTF-8" ?>
 			.map(
 				(page) => `
     <url>
-      <loc>${siteMetadata.siteUrl}/${page}</loc>
+      <loc>${siteConfig.siteUrl}/${page}</loc>
       <changefreq>daily</changefreq>
       <priority>0.7</priority>
     </url>
@@ -46,7 +46,7 @@ const sitemap = (posts, pages) => `<?xml version="1.0" encoding="UTF-8" ?>
 					? null
 					: `
     <url>
-      <loc>${siteMetadata.siteUrl}/${post.slug}</loc>
+      <loc>${siteConfig.siteUrl}/${post.slug}</loc>
       <changefreq>daily</changefreq>
       <priority>0.7</priority>
     </url>

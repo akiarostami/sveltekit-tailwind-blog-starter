@@ -1,9 +1,9 @@
 <script>
 	// can use to design: https://og-playground.vercel.app/
 	export let text = 'Official Website';
-	import siteMetadata from '$settings/siteMetadata';
-	const height = siteMetadata.og.height;
-	const color = siteMetadata.primaryColor;
+	import siteConfig from '$settings/siteConfig';
+	const height = siteConfig.og.height;
+	const color = siteConfig.primaryColor;
 	const barWidth = 140;
 </script>
 
@@ -27,7 +27,7 @@
 				/></svg
 			>
 			<div style="font-size:80px;color:{color};font-weight:700;line-height:85%;margin-left:20px;">
-				{siteMetadata.headerTitle}
+				{siteConfig.headerTitle}
 			</div>
 		</div>
 	</div>

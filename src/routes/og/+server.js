@@ -4,10 +4,10 @@ import { Resvg } from '@resvg/resvg-js';
 import Oswald from '$lib/fonts/Oswald-Bold.ttf';
 import { html as toReactNode } from 'satori-html';
 import OGTemplate from '$lib/OGTemplate.svelte';
-import siteMetadata from '$settings/siteMetadata';
+import siteConfig from '$settings/siteConfig';
 
-const width = siteMetadata.og.width;
-const height = siteMetadata.og.height;
+const width = siteConfig.og.width;
+const height = siteConfig.og.height;
 
 const template = `<h1>Test</h1>`;
 
