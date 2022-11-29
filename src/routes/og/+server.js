@@ -3,15 +3,18 @@ import satori from 'satori';
 import { Resvg } from '@resvg/resvg-js';
 import Oswald from '$lib/fonts/Oswald-Bold.ttf';
 import { html as toReactNode } from 'satori-html';
-import OGImage from '$lib/OGImage.svelte';
+import OGTemplate from '$lib/OGTemplate.svelte';
+import siteMetadata from '$settings/siteMetadata';
 
-const width = 1200;
-const height = 630;
+const width = siteMetadata.og.width;
+const height = siteMetadata.og.height;
+
+const template = `<h1>Test</h1>`;
 
 /** @type {import('./$types').RequestHandler} */
 export const GET = async ({ url }) => {
-	const message = url.searchParams.get('message') ?? undefined;
-	const result = OGImage.render({ message });
+	const text = url.searchParams.get('text') ?? undefined;
+	const result = OGTemplate.render({ text });
 	const element = toReactNode(result.html);
 	// const element = toReactNode(`${result.html}<style>${result.css.code}</style>`);
 

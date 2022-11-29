@@ -18,6 +18,11 @@ const siteMetadata = {
 	youtube: 'https://youtube.com',
 	linkedin: 'https://www.linkedin.com',
 	locale: 'en-US',
+	brandColor: '#ff3e00',
+	og: {
+		width: 1200,
+		height: 630
+	},
 	analytics: {
 		// If you want to use an analytics provider you have to add it to the
 		// content security policy in the `next.config.js` file.

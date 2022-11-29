@@ -39,6 +39,7 @@ This is my first attempt to write something in Sveltekit.
 - [ ] og:image
 - [ ] Netlify CMS
 - [ ] Pagination
+- [ ] Search (fuse.js or [alternatives](https://github.com/leeoniya/uFuzzy#user-content-benchmark))
 - [x] SEO friendly with RSS feed, sitemaps and more!
 
 ## Quick Start Guide
