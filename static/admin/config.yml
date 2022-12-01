@@ -13,20 +13,59 @@ slug:
   sanitize_replacement: '-'
 
 collections:
-  - name: notes # Used in routes, e.g., /admin/collections/blog
+  - name: authors
+    identifier_field: name
+    label: Authors
+    folder: content/authors
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: ID, name: id, widget: string }
+      - { label: Name, name: name, widget: string }
+      - {
+          label: Avatar,
+          name: avatar,
+          widget: image,
+          choose_url: true,
+          allow_multiple: false,
+          required: false
+        }
+      - { label: Occupation, name: occupation, widget: string, required: false }
+      - { label: Company, name: company, widget: string, required: false }
+      - { label: Email, name: email, widget: string, required: false }
+      - { label: Twitter, name: twitter, widget: string, required: false }
+      - { label: LinkedIn, name: linkedin, widget: string, required: false }
+      - { label: GitHub, name: github, widget: string, required: false }
+  - name: posts # Used in routes, e.g., /admin/collections/blog
     identifier_field: title
-    label: Notes # Used in the UI
-    folder: content/notes # The path to the folder where the documents are stored
+    label: Posts # Used in the UI
+    folder: content/posts # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: Title, name: title, widget: string }
       - { label: Subtitle, name: subtitle, widget: string, required: false }
-      - { label: Type, name: type, widget: select, options: ['note'], default: 'note' }
-      - { label: Date, name: date, widget: date, format: 'YYYY-MM-DD' }
-      - { label: Rtl, name: rtl, widget: boolean, required: false }
-      - { label: Hidden, name: hidden, widget: boolean, default: false, required: false }
-      - { label: 'Note', name: 'body', widget: 'markdown' }
+      - {
+          label: 'Publish Date',
+          name: date,
+          widget: datetime,
+          default: '',
+          date_format: 'YYYY-MM-DD',
+          time_format: 'HH:mm',
+          format: 'LLL'
+        }
+      - { label: Draft, name: draft, widget: boolean, default: true, required: false }
+      - { label: Summary, name: summary, widget: string, required: false }
+      - { label: 'Tags', name: 'tags', widget: 'list', allow_add: true }
+      - {
+          label: 'Featured Image',
+          name: 'image',
+          widget: 'image',
+          choose_url: true,
+          allow_multiple: false,
+          required: false
+        }
+      - { label: Body, name: 'body', widget: 'markdown' }
   - name: projects # Used in routes, e.g., /admin/collections/blog
     identifier_field: title
     label: Projects # Used in the UI
@@ -35,6 +74,20 @@ collections:
     slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: Title, name: title, widget: string }
+      - { label: Subtitle, name: subtitle, widget: string, required: false }
+      - { label: 'Date', name: date, widget: datet, default: '', format: 'YYYY-MM-DD' }
+      - { label: Draft, name: draft, widget: boolean, default: true, required: false }
+      - { label: Description, name: description, widget: string, required: false }
+      - { label: Link, name: link, widget: string, required: false }
+      - { label: 'Tags', name: 'tags', widget: 'list', allow_add: true }
+      - {
+          label: 'Featured Image',
+          name: 'image',
+          widget: 'image',
+          choose_url: true,
+          allow_multiple: false,
+          required: false
+        }
       - {
           label: Type,
           name: type,
@@ -54,20 +107,4 @@ collections:
               'other - video'
             ]
         }
-      - {
-          label: Image,
-          name: img,
-          widget: image,
-          choose_url: false,
-          allow_multiple: false,
-          required: false
-        }
-      - { label: Date, name: date, widget: date }
-      - { label: Wide, name: wide, widget: boolean, required: false }
-      - { label: Rtl, name: rtl, widget: boolean, required: false }
-      - { label: Hidden, name: hidden, widget: boolean, default: false, required: false }
-      - { label: Video, name: video, widget: string, required: false }
-      - { label: Twitter, name: twitter, widget: string, required: false }
-      - { label: Source, name: source, widget: string, required: false }
-      - { label: Excerpt, name: excerpt, widget: text, required: false }
-      - { label: 'Content', name: 'body', widget: 'markdown' }
+      - { label: Body, name: 'body', widget: 'markdown' }

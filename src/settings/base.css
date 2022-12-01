@@ -2,6 +2,13 @@ html {
 	@apply font-body antialiased;
 }
 
+h1,
+h2,
+h3,
+h4 {
+	@apply font-title font-extrabold;
+}
+
 .task-list-item::before {
 	@apply hidden;
 }

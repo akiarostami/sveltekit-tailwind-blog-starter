@@ -1,7 +1,7 @@
 const siteConfig = {
 	title: 'Sveltekit Tailwind Blog Starter',
 	author: 'Ahmad Kiarostami',
-	headerTitle: 'TailwindBlog',
+	headerTitle: 'pied piper',
 	description: 'A blog created with Sveltekit and Tailwind.css',
 	language: 'en-us',
 	theme: 'dark', // system, dark or light
@@ -17,7 +17,7 @@ const siteConfig = {
 	youtube: 'https://youtube.com',
 	linkedin: 'https://www.linkedin.com',
 	locale: 'en-US',
-	primaryColor: '#6366f1',
+	primaryColor: '#06a261',
 	multiuser: false,
 	og: {
 		enabled: true,

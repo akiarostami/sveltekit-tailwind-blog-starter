@@ -15,6 +15,7 @@
 	>
 		Welcome to my blog!
 	</h1>
+	<h1>Test</h1>
 	<h2 class="text-xl prose-xl text-gray-600 dark:text-gray-400">
 		Here's where I share my thoughts and my notes with the world, as well as all interesting things
 		I find online. To get the updates, please check this site often, or subscribe to my RSS feed.

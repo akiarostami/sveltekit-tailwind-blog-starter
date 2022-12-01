@@ -5,8 +5,8 @@
 
 	const info = {
 		id: 'admin',
-		name: 'Tails Azimuth',
-		avatar: '/img/avatar.png',
+		name: 'John Doe',
+		avatar: '/img/avatar.jpg',
 		occupation: 'Professor of Atmospheric Science',
 		company: 'Stanford University',
 		email: 'address@yoursite.com',

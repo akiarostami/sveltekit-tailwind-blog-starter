@@ -1,15 +1,14 @@
 // used the following as a reference: https://geoffrich.net/posts/svelte-social-image/
 import satori from 'satori';
 import { Resvg } from '@resvg/resvg-js';
-import Oswald from '$lib/fonts/Oswald-Bold.ttf';
+import Saira from '$lib/fonts/Saira-ExtraBold.ttf';
+import OpenSans from '$lib/fonts/OpenSans-ExtraBold.ttf';
 import { html as toReactNode } from 'satori-html';
 import OGTemplate from '$lib/OGTemplate.svelte';
 import siteConfig from '$settings/siteConfig';
 
 const width = siteConfig.og.width;
 const height = siteConfig.og.height;
-
-const template = `<h1>Test</h1>`;
 
 /** @type {import('./$types').RequestHandler} */
 export const GET = async ({ url }) => {
@@ -20,11 +19,8 @@ export const GET = async ({ url }) => {
 
 	const svg = await satori(element, {
 		fonts: [
-			{
-				name: 'Oswald',
-				data: Buffer.from(Oswald),
-				style: 'bold'
-			}
+			{ name: 'Saira', data: Buffer.from(Saira), style: 'bold' },
+			{ name: 'Open Sans', data: Buffer.from(OpenSans), style: 'bold' }
 		],
 		height,
 		width
