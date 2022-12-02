@@ -5,7 +5,6 @@
 
 	export let data;
 	const projects = data.projects;
-	console.log('Projects >>>', projects);
 </script>
 
 <Head title="Projects" />

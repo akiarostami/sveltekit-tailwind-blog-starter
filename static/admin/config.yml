@@ -59,6 +59,12 @@ collections:
       - { label: Summary, name: summary, widget: string, required: false }
       - { label: 'Tags', name: 'tags', widget: 'list', allow_add: true }
       - {
+          label: Category,
+          name: category,
+          widget: select,
+          options: ['News', 'Info', 'Products', 'Other']
+        }
+      - {
           label: 'Featured Image',
           name: 'image',
           widget: 'image',
@@ -84,11 +90,10 @@ collections:
     slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: Title, name: title, widget: string }
-      - { label: Subtitle, name: subtitle, widget: string, required: false }
-      - { label: 'Date', name: date, widget: datet, default: '', format: 'YYYY-MM-DD' }
+      - { label: 'Date', name: date, widget: date, default: '', format: 'YYYY-MM-DD' }
       - { label: Draft, name: draft, widget: boolean, default: true, required: false }
       - { label: Description, name: description, widget: string, required: false }
-      - { label: Link, name: link, widget: string, required: false }
+      - { label: Link, name: link, widget: string }
       - { label: 'Tags', name: 'tags', widget: 'list', allow_add: true }
       - {
           label: 'Featured Image',
@@ -97,24 +102,5 @@ collections:
           choose_url: true,
           allow_multiple: false,
           required: false
-        }
-      - {
-          label: Type,
-          name: type,
-          widget: select,
-          options:
-            [
-              'company',
-              'interview',
-              'music video',
-              'production',
-              'project',
-              'other - aware',
-              'other - design',
-              'other - paper',
-              'other - panel',
-              'other - reportage',
-              'other - video'
-            ]
         }
       - { label: Body, name: 'body', widget: 'markdown' }

@@ -1,34 +1,11 @@
 <script>
 	import Head from '$lib/Head.svelte';
 	import SocialIcon from '$lib/components/SocialIcon.svelte';
+	import siteConfig from '$settings/siteConfig';
 	import Title from '$lib/components/Title.svelte';
 
-	const info = {
-		id: 'admin',
-		name: 'John Doe',
-		avatar: '/img/avatar.jpg',
-		occupation: 'Professor of Atmospheric Science',
-		company: 'Stanford University',
-		email: 'address@yoursite.com',
-		twitter: 'https://twitter.com/Twitter',
-		linkedin: 'https://www.linkedin.com',
-		github: 'https://github.com',
-		about: `
-			<p>
-				Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His research
-				interests includes complexity modelling of tailwinds, headwinds and crosswinds.
-			</p>
-			<p>
-				He leads the clean energy group which develops 3D air pollution-climate models, writes
-				differential equation solvers, and manufactures titanium plated air ballons. In his free
-				time he bakes raspberry pi.
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat
-				feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu
-				pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
-			</p>`
-	};
+	export let data;
+	const authors = data.authors;
 </script>
 
 <Head title="About" />
@@ -38,18 +15,44 @@
 		<Title title="About" />
 	</div>
 	<div class="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
-		<div class="flex flex-col items-center pt-8">
-			<img src={info.avatar} alt="avatar" class="h-48 w-48 rounded-full" />
-			<h3 class="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">{info.name}</h3>
-			<div class="text-gray-500 dark:text-gray-400">{info.occupation}</div>
-			<div class="text-gray-500 dark:text-gray-400">{info.company}</div>
-			<div class="flex space-x-3 pt-6">
-				<SocialIcon icon="mail" url={`mailto:${info.email}`} />
-				<SocialIcon icon="github" url={info.github} />
-				<SocialIcon icon="linkedin" url={info.linkedin} />
-				<SocialIcon icon="twitter" url={info.twitter} />
+		<div class="flex flex-col items-center py-6">
+			<img src={siteConfig.siteLogo} alt="logo" class="h-64 w-64" />
+			<div class="flex space-x-4 pt-4">
+				<SocialIcon icon="mail" url={`mailto:${siteConfig.email}`} />
+				<SocialIcon icon="github" url={siteConfig.github} />
+				<SocialIcon icon="linkedin" url={siteConfig.linkedin} />
+				<SocialIcon icon="twitter" url={siteConfig.twitter} />
 			</div>
 		</div>
-		<div class="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">{@html info.about}</div>
+		<div class="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">
+			Pied Piper (PP) was an American tech company based in Silicon Valley, California. The company
+			was formed in 2014 by Richard Hendricks as a company to develop Richard's algorithm that he'd
+			created. The company is best known to for achieving the highest Weissman score in history
+			during their presentation at TechCrunch Disrupt. The company's first appearance was in the
+			Season One episode Minimum Viable Product and has since served as the primary company for the
+			series.
+		</div>
+	</div>
+	<div class="space-y-2 py-8 md:space-y-5">
+		<Title h2 title="Contributors" />
+		<div class="grid xl:grid-cols-3 grid-cols-2 gap-4">
+			{#each authors as author}
+				<div class="lg:flex flex-row space-x-3">
+					<div class="grow-0 shrink-0 basis-auto w-full lg:w-1/3">
+						<img src={author.avatar} alt={author.name} class="w-full rounded-xl mb-4 lg:mb-0" />
+					</div>
+					<div class="grow-0 shrink-0 basis-auto w-full lg:w-2/3">
+						<h5 class="text-lg font-bold">{author.name}</h5>
+						<p class="text-gray-500 mb-2">{author.occupation}</p>
+						<div class="flex space-x-2">
+							<SocialIcon icon="mail" url={`mailto:${author.email}`} />
+							<SocialIcon icon="twitter" url={author.twitter} />
+							<SocialIcon icon="linkedin" url={author.linkedin} />
+							<SocialIcon icon="github" url={author.github} />
+						</div>
+					</div>
+				</div>
+			{/each}
+		</div>
 	</div>
 </div>

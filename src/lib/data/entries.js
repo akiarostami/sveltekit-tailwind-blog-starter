@@ -15,9 +15,27 @@ const getProjects = () => {
 	return Object.entries(import.meta.glob('/content/projects/**/*.md', { eager: true }));
 };
 
+const getAuthors = () => {
+	return Object.entries(import.meta.glob('/content/authors/**/*.md', { eager: true }));
+};
+
+const getEntriesByType = (entryType) => {
+	switch (entryType) {
+		case 'posts':
+			return getPosts();
+		case 'projects':
+			return getProjects();
+		case 'authors':
+			return getAuthors();
+		default:
+			throw new Error(`unknown entry type ${entryType}`);
+	}
+};
+
 // Get all entries and add metadata
 export const getEntries = (entryType) => {
-	const entries = entryType === 'posts' ? getPosts() : getProjects();
+	const entries = getEntriesByType(entryType);
+
 	return (
 		entries
 			// format metadata and content
