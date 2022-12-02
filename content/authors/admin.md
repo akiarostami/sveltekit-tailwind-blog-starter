@@ -1,5 +1,5 @@
 ---
-id: 'admin',
+id: admin
 name: Dinesh Chugtai
 avatar: /img/dinesh.jpg
 occupation: Lead Engineer
