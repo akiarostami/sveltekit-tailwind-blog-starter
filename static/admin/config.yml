@@ -18,7 +18,7 @@ collections:
     label: Authors
     folder: content/authors
     create: true
-    slug: '{{id}}'
+    slug: '{{fields.id}}'
     fields:
       - { label: ID, name: id, widget: string }
       - { label: Name, name: name, widget: string }
