@@ -18,10 +18,9 @@ collections:
     label: Authors
     folder: content/authors
     create: true
-    slug: '{{fields.id}}'
-    summary: '{{name}}: {{occupation}}, {{company}}'
+    slug: '{{slug}}'
+    summary: '{{name}}: {{occupation}}'
     fields:
-      - { label: ID, name: id, widget: string }
       - { label: Name, name: name, widget: string }
       - {
           label: Avatar,
@@ -72,7 +71,7 @@ collections:
           widget: relation,
           collection: authors,
           search_fields: ['name'],
-          value_field: id,
+          value_field: name,
           display_fields: ['name']
         }
       - { label: Body, name: 'body', widget: 'markdown' }
