@@ -1,5 +1,6 @@
 ---
 name: Richard Hendricks
+avatar: /img/richard.png
 occupation: CEO and Founder
 company: Pied Piper
 email: richard@piedpiper.com
