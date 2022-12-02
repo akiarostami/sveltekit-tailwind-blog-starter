@@ -19,6 +19,7 @@ collections:
     folder: content/authors
     create: true
     slug: '{{fields.id}}'
+    summary: '{{name}}: {{occupation}}, {{company}}'
     fields:
       - { label: ID, name: id, widget: string }
       - { label: Name, name: name, widget: string }
@@ -64,6 +65,15 @@ collections:
           choose_url: true,
           allow_multiple: false,
           required: false
+        }
+      - {
+          label: Author,
+          name: author,
+          widget: relation,
+          collection: authors,
+          search_fields: ['name'],
+          value_field: id,
+          display_fields: ['name']
         }
       - { label: Body, name: 'body', widget: 'markdown' }
   - name: projects # Used in routes, e.g., /admin/collections/blog

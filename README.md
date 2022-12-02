@@ -57,6 +57,7 @@ npm run dev
 - Customize `tailwind.config.cjs` for all tailwind settings and configurations
 - Customize `siteConfig.js` for all site-related settings
 - Modify `headerNavLinks.js` to customize navigation links
+- SSR - by default it's ON.
 - `src/settings/siteConfig.js` - contains most of the site related information which should be modified for a user's need.
 - `src/settings/authors/default.md` - default author information (required). Additional authors can be added as files in `data/authors`.
 - `src/settings/projectsData.js` - data used to generate styled card on the projects page.
