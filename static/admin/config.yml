@@ -36,6 +36,7 @@ collections:
       - { label: Twitter, name: twitter, widget: string, required: false }
       - { label: LinkedIn, name: linkedin, widget: string, required: false }
       - { label: GitHub, name: github, widget: string, required: false }
+      - { label: About, name: 'body', widget: 'markdown' }
   - name: posts # Used in routes, e.g., /admin/collections/blog
     identifier_field: title
     label: Posts # Used in the UI
