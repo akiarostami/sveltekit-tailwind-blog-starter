@@ -76,7 +76,14 @@ All content files (Blog Posts, Author Information, and Projects) are saved under
 
 ## Netlify CMS configuration
 
-To be added
+- Go to Site Settings > Identity
+- Enable Identity
+- Settings > Registration > Invite Only
+- Go to Settings > Identity. In Services section enable [Git Gateway](https://docs.netlify.com/visitor-access/git-gateway/#setup-and-settings)
+- Identity > Invite User
+- Receive the invitation email, click on Accept the Invite, then add "/admin" to the domain and before "#invite_token"
+- Set your password
+  To be added
 
 ## Deploy
 
