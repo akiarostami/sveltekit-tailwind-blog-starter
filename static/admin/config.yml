@@ -57,7 +57,14 @@ collections:
         }
       - { label: Draft, name: draft, widget: boolean, default: true, required: false }
       - { label: Summary, name: summary, widget: string, required: false }
-      - { label: 'Tags', name: 'tags', widget: 'list', allow_add: true }
+      - {
+          label: 'Tags',
+          name: 'tags',
+          widget: 'select',
+          multiple: true,
+          create: true,
+          SelectFrom: { collection: posts, field: tags }
+        }
       - {
           label: Category,
           name: category,
@@ -94,7 +101,7 @@ collections:
       - { label: Draft, name: draft, widget: boolean, default: true, required: false }
       - { label: Description, name: description, widget: string, required: false }
       - { label: Link, name: link, widget: string }
-      - { label: 'Tags', name: 'tags', widget: 'list', allow_add: true }
+      - { label: 'Tags', name: 'tags', widget: 'select', multiple: true, create: true }
       - {
           label: 'Featured Image',
           name: 'image',
@@ -103,4 +110,4 @@ collections:
           allow_multiple: false,
           required: false
         }
-      - { label: Body, name: 'body', widget: 'markdown' }
+      - { label: Body, name: 'body', widget: 'markdown', required: false }
