@@ -10,7 +10,23 @@
 	<article>
 		<div class="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
 			<header class="pt-6 xl:pb-6">
+				{#if post.image}
+					<div class=" w-full pb-6">
+						<img
+							alt={post.title}
+							src={post.image}
+							class="object-cover object-center w-full h-auto"
+						/>
+					</div>
+				{/if}
 				<div class="space-y-1 text-center">
+					<div>
+						<h1
+							class="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14"
+						>
+							{post.title}
+						</h1>
+					</div>
 					<dl class="space-y-10">
 						<div>
 							<dt class="sr-only">Published on</dt>
@@ -26,13 +42,6 @@
 							</dd>
 						</div>
 					</dl>
-					<div>
-						<h1
-							class="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14"
-						>
-							{post.title}
-						</h1>
-					</div>
 				</div>
 			</header>
 			<div

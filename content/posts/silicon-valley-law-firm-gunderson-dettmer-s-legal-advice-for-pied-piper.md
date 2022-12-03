@@ -1,14 +1,19 @@
 ---
 title: Silicon Valley law firm Gunderson Dettmer’s legal advice for Pied Piper
-date: December 2, 2022 6:05 PM
+date: '2017-05-27'
 draft: false
+summary: "Sarah Buhr's interview with Gunderson Dettmer for TechCrunch"
+tags:
+  - TechCrunch
+  - Law
 category: Other
 image: https://techcrunch.com/wp-content/uploads/2017/05/section_homepage_bg_2.jpg
 author: Dinesh Chugtai
 ---
+
 [Sarah Buhr](https://techcrunch.com/author/sarah-buhr/)'s [interview](https://techcrunch.com/2017/05/27/how-silicon-valley-law-firm-gunderson-dettmer-would-legally-advise-pied-piper/) with [Gunderson Dettmer](https://www.gunder.com/)
 
-[Gunderson Dettmer](https://www.gunder.com/) is the law firm a good majority of tech startups turn to in the Valley for fundings, mergers, licensing and other deals, and it’s been in the business of offering every-day legal advice to everyone from Oracle to DoorDash since the dot-com boom. It was ranked the “most active law firm globally” in PitchBook’s recently released first quarter [2017 Global Venture Capital League Tables](http://files.pitchbook.com/pdf/PitchBook_1Q_2017_Global_League_Tables.pdf) and closed more than 1,200 VC financing deals last year — so what advice does it have for Richard Hendricks’ character in HBO’s Silicon Valley?
+[Gunderson Dettmer](https://www.gunder.com/) is the law firm a good majority of tech startups turn to in the Valley for fundings, mergers, licensing and other deals, and it’s been in the business of offering every-day legal advice to everyone from Oracle to DoorDash since the dot-com boom. It was ranked the “most active law firm globally” in PitchBook’s recently released first quarter [2017 Global Venture Capital League Tables](http://files.pitchbook.com/pdf/PitchBook_1Q_2017_Global_League_Tables.pdf) and closed more than 1, 200 VC financing deals last year — so what advice does it have for Richard Hendricks’ character in HBO’s Silicon Valley?
 
 I don’t want to give away any spoilers for those who haven’t watched the latest episode, but I did sit down with Gunderson partner [Ivan Gavira](https://www.linkedin.com/in/ivangaviria/) to get his take on the Pied Piper saga, his craziest deal and why Silicon Valley continues to turn to him for tech legalese.
 
@@ -56,7 +61,7 @@ IG: I do! I love that show. You know what’s crazy about that show, and I’m s
 
 SB: *I wouldn’t be surprised. So, what advice do you have for Pied Piper founder Richard Hendricks right now?*
 
-***(Caution, if you’re not caught up on this season, there is a slight spoiler ahead so don’t read if you don’t want to know anything about this season yet).***
+**_(Caution, if you’re not caught up on this season, there is a slight spoiler ahead so don’t read if you don’t want to know anything about this season yet)._**
 
 IG: I haven’t caught up on the latest episode but the last time I was caught up he was leaving to start his new internet thing but he hadn’t actually done it.
 

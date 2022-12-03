@@ -46,15 +46,9 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { label: Title, name: title, widget: string }
       - { label: Subtitle, name: subtitle, widget: string, required: false }
-      - {
-          label: 'Publish Date',
-          name: date,
-          widget: datetime,
-          default: '',
-          date_format: 'YYYY-MM-DD',
-          time_format: 'HH:mm',
-          format: 'LLL'
-        }
+      - { label: 'Date', name: date, widget: date, default: '', format: 'YYYY-MM-DD' }
+
+      - { label: 'Publish Date', name: date, widget: date, default: '', format: 'YYYY-MM-DD' }
       - { label: Draft, name: draft, widget: boolean, default: true, required: false }
       - { label: Summary, name: summary, widget: string, required: false }
       - { label: 'Tags', name: 'tags', widget: 'list', allow_add: true }

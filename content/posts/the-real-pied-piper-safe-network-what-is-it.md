@@ -1,25 +1,25 @@
 ---
-title: "The Real Pied Piper – SAFE Network: What is it?"
-date: December 2, 2022 5:55 PM
+title: 'The Real Pied Piper – SAFE Network: What is it?'
+date: '2015-12-02'
 draft: false
-summary: "Safe Network is the real-life Pied Piped from “Silicon Valley” coming
+summary: 'Safe Network is the real-life Pied Piped from “Silicon Valley” coming
   to life. In this interview with the #SAFENetwork’s team we get to know about
-  the project, what is it, how it’s developed, and more."
+  the project, what is it, how it’s developed, and more.'
 tags:
-  - PiedPiper
   - SiliconValley
   - HBO
   - SAFENetwork
 category: Info
 author: Richard Hendricks
 ---
+
 Safe Network is the real-life Pied Piped from “Silicon Valley” coming to life. In this interview with the #SAFENetwork’s team we get to know about the project, what is it, how it’s developed, and more.
 
 Have you ever wondered:
 
 ## Does the real **Pied Piper** idea from HBO’s Silicon Valley actually exist? 
 
-**Yes, it does.** It’s called SAFE network and it has a lot to do with the HBO show. 
+**Yes, it does.** It’s called SAFE network and it has a lot to do with the HBO show.
 
 We got the exciting opportunity to talk with SAFE Network’s team about the project of creating a real-life decentralized web. Yes, you’ve heard that right – a team of developers are working on building the new network – just like the Pied Piper’s decentralized Internet featured on HBO’s show “Silicon Valley”.
 
