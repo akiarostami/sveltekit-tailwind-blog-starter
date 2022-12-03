@@ -12,5 +12,3 @@ tags:
   - platform
 image: /img/theplatform.jpg
 ---
-
-Pied Piper's first product is a cloud based compression platform to allow users to compress and share their files between their devices. The platform contains a neural net which means that it improves as more files are uploaded. The question is if The Platform is as popular with the general public as it is with the tech industry.
