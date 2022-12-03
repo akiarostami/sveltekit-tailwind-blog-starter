@@ -7,7 +7,7 @@ description: Pied Piper's first product is a cloud based compression platform to
   platform contains a neural net which means that it improves as more files are
   uploaded. The question is if The Platform is as popular with the general
   public as it is with the tech industry.
-link: https://uxdesign.cc/why-pied-piper-failed-and-why-you-should-always-test-with-real-users-b00c2ba40f9e
+href: https://uxdesign.cc/why-pied-piper-failed-and-why-you-should-always-test-with-real-users-b00c2ba40f9e
 tags:
   - platform
 image: /img/theplatform.jpg
