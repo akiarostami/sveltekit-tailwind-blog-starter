@@ -10,22 +10,23 @@
 	>
 		{#if card.image}
 			{#if card.href}
-				<a href={card.href} aria-label={`Link to ${card.title}`}>
+				<a
+					href={card.href}
+					target="_blank"
+					rel="noopener noreferrer"
+					aria-label={`Link to ${card.title}`}
+				>
 					<img
 						alt={card.title}
 						src={card.image}
-						class="object-cover object-center md:h-36 lg:h-48"
-						width={544}
-						height={306}
+						class="object-cover object-center aspect-video w-full"
 					/>
 				</a>
 			{:else}
 				<img
 					alt={card.title}
 					src={card.image}
-					class="object-cover object-center md:h-36 lg:h-48"
-					width={544}
-					height={306}
+					class="object-cover object-center aspect-video w-full"
 				/>
 			{/if}
 		{/if}
@@ -43,6 +44,8 @@
 			{#if card.href}
 				<a
 					href={card.href}
+					target="_blank"
+					rel="noopener noreferrer"
 					class="text-base font-medium leading-6 text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
 					aria-label={`Link to ${card.title}`}
 				>

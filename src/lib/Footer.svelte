@@ -16,8 +16,8 @@
 			<SocialIcon icon="twitter" url={siteConfig.twitter} />
 		</div>
 		<div class="mb-4 flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
-			{siteConfig.author} &nbsp; • &nbsp; © {year} &nbsp; • &nbsp;
-			<a href="/">{siteConfig.title}</a>
+			<a href="/">{siteConfig.title}</a> &nbsp; • &nbsp; © {year}
+			{siteConfig.author}
 		</div>
 	</div>
 </footer>
