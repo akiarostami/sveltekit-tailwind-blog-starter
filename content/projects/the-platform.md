@@ -1,7 +1,7 @@
 ---
 title: The Platform
 date: 2020-01-01
-draft: true
+draft: false
 description: Pied Piper's first product is a cloud based compression platform to
   allow users to compress and share their files between their devices. The
   platform contains a neural net which means that it improves as more files are
