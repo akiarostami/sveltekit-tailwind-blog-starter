@@ -1,9 +1,10 @@
 <script>
 	import siteConfig from '$settings/siteConfig.js';
 	import Tag from '$lib/components/Tag.svelte';
+	import SocialIcon from '$lib/components/SocialIcon.svelte';
 
 	export let post;
-	export let authors = [];
+	export let author;
 </script>
 
 <div class="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0">
@@ -54,34 +55,27 @@
 						<ul
 							class="flex justify-center space-x-8 sm:space-x-12 xl:block xl:space-x-0 xl:space-y-8"
 						>
-							{#each authors as author}
-								<li class="flex items-center space-x-2">
-									{#if author.avatar}
-										<img
-											src={author.avatar}
-											width="38px"
-											height="38px"
-											alt="avatar"
-											class="h-10 w-10 rounded-full"
-										/>
-									{/if}
-									<dl class="whitespace-nowrap text-sm font-medium leading-5">
-										<dt class="sr-only">Name</dt>
-										<dd class="text-gray-900 dark:text-gray-100">{author.name}</dd>
-										<dt class="sr-only">Twitter</dt>
-										<dd>
-											{#if author.twitter}
-												<a
-													href={author.twitter}
-													class="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-												>
-													{author.twitter.replace('https://twitter.com/', '@')}
-												</a>
-											{/if}
-										</dd>
-									</dl>
-								</li>
-							{/each}
+							<li class="flex items-center space-x-2">
+								{#if author.avatar}
+									<img
+										src={author.avatar}
+										width="38px"
+										height="38px"
+										alt="avatar"
+										class="h-10 w-10 rounded-full"
+									/>
+								{/if}
+								<dl class="whitespace-nowrap text-sm font-medium leading-5">
+									<dt class="sr-only">Name</dt>
+									<dd class="text-gray-900 dark:text-gray-100">{author.name}</dd>
+									<dt class="sr-only">Twitter</dt>
+									<dd>
+										<SocialIcon icon="twitter" url={author.twitter} small>
+											{author.twitter?.replace('https://twitter.com/', '@')}
+										</SocialIcon>
+									</dd>
+								</dl>
+							</li>
 						</ul>
 					</dd>
 				</dl>

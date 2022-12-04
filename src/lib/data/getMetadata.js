@@ -10,9 +10,9 @@ export const getMetadata = (filepath, entry) => {
 			.split('/')
 			.pop(),
 
-		twitter: entry.metadata.twitter
-			? entry.metadata.twitter.replace(/(http(s)?:\/\/)?((w){3}.)?twitter\.com\/?/, '')
-			: null,
+		// twitter: entry.metadata.twitter
+		// 	? entry.metadata.twitter.replace(/(http(s)?:\/\/)?((w){3}.)?twitter\.com\/?/, '')
+		// 	: null,
 		youtube: entry.metadata.video
 			? entry.metadata.video.replace(
 					/(http(s)?:\/\/)?((w){3}.)?youtu(be|.be)(\.com)?\/(watch\?v=)?/,

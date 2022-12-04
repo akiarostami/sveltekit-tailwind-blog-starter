@@ -2,6 +2,7 @@
 	import siteConfig from '$settings/siteConfig.js';
 	import Head from '$lib/Head.svelte';
 	import Blogs from '$lib/components/Blogs.svelte';
+	import Title from '$lib/components/Title.svelte';
 
 	export let data;
 	let posts = data.posts;
@@ -16,10 +17,10 @@
 		Welcome to Pied Piper!
 	</h1>
 	<p class="text-xl prose-xl text-gray-800 dark:text-gray-400">
-		This is Pied Piper's (un)official blog. Pied Piper offers a middle-out compression solution
-		making data storage problems smaller. To get the updates, please check this site often, or
-		subscribe to our RSS feed.
+		This is Pied Piper's (un)official blog. Amoung many other things, Pied Piper offers a middle-out
+		compression solution making data storage problems smaller. To get the updates, please check this
+		site often, or subscribe to our RSS feed.
 	</p>
 </div>
 
-<Blogs title="Latest" h2={true} subtitle={siteConfig.description} {posts} search={false} />
+<Blogs title="Latest Posts" h2 {posts} search={false} count={3} />

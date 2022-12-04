@@ -1,10 +1,13 @@
 import siteConfig from '$settings/siteConfig.js';
+import nav from '$settings/headerNavLinks.js';
 import { posts } from '$lib/data/posts';
 
 export const prerender = true;
 
+const trimSlash = (str) => str.replace(/^\/|\/$/g, '');
+
 export async function GET() {
-	const pages = [];
+	const pages = nav;
 	const body = sitemap(posts, pages);
 
 	return new Response(body, {
@@ -33,7 +36,7 @@ const sitemap = (posts, pages) => `<?xml version="1.0" encoding="UTF-8" ?>
 			.map(
 				(page) => `
     <url>
-      <loc>${siteConfig.siteUrl}/${page}</loc>
+      <loc>${siteConfig.siteUrl}/${trimSlash(page.href)}</loc>
       <changefreq>daily</changefreq>
       <priority>0.7</priority>
     </url>

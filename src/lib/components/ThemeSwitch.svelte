@@ -8,7 +8,6 @@
 	onMount(async () => {
 		darkMode = isDarkMode();
 		setDarkMode(darkMode);
-		console.log('Is dark mode: ', darkMode);
 	});
 
 	function toggle() {

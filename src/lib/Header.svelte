@@ -12,7 +12,7 @@
 				<div class="mr-3">
 					<img src="/logo.svg" alt="Logo" class="h-10 w-auto" />
 				</div>
-				<div class="hidden h-6 text-2xl font-semibold sm:block">
+				<div class="hidden text-4xl font-semibold sm:block font-title">
 					{siteConfig.headerTitle}
 				</div>
 			</div>

@@ -7,17 +7,13 @@ const isDarkMode = () => {
 	if (browser) {
 		if ('theme' in localStorage) {
 			darkMode = localStorage.theme === 'dark';
-			console.log('local storage theme is dark');
 		} else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
 			darkMode = true;
-			console.log('prefers dark');
 		} else {
 			darkMode = siteConfig.theme === 'dark';
-			console.log('site metadata theme is dark');
 		}
 	} else {
 		darkMode = localStorage.theme === 'dark';
-		console.log('local storage theme is dark too');
 	}
 
 	return darkMode;

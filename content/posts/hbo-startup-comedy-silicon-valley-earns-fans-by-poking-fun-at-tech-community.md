@@ -6,6 +6,7 @@ summary: 'When HBO rolled out a TV series poking fun at high tech this spring, S
 tags:
   - FirstPost
   - HBO
+  - Community
 category: Other
 author: Dinesh Chugtai
 ---

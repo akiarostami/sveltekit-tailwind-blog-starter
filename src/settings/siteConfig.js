@@ -1,7 +1,7 @@
 const siteConfig = {
 	title: 'Pied Piper (un)official blog',
 	author: 'Pied Piper',
-	headerTitle: 'pied piper',
+	headerTitle: 'Pied Piper',
 	description: 'Pied Piper (un)official blog, created with Sveltekit and Tailwind.css',
 	language: 'en-us',
 	theme: 'dark', // system, dark or light

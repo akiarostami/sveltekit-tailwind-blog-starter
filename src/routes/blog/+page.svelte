@@ -4,8 +4,9 @@
 
 	export let data;
 	const posts = data.posts;
+	const tags = data.tags;
 </script>
 
 <Head title="Blog" />
 
-<Blogs title="All Posts" {posts} />
+<Blogs title="All Posts" {posts} {tags} />

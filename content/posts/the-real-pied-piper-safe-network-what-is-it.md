@@ -6,7 +6,6 @@ summary: 'Safe Network is the real-life Pied Piped from “Silicon Valley” com
   to life. In this interview with the #SAFENetwork’s team we get to know about
   the project, what is it, how it’s developed, and more.'
 tags:
-  - SiliconValley
   - HBO
   - SAFENetwork
 category: Info

@@ -5,7 +5,7 @@ draft: false
 summary: '“I was thinking, actually, what if you had asked for less?” Pied Piper’s Richard Hendricks asks a fictional founder in a bar scene in the season 2 premiere of HBO’s Silicon Valley.'
 tags:
   - TechCrunch
-  - Law
+  - HBO
 category: Other
 image: https://techcrunch.com/wp-content/uploads/2017/02/gettyimages-577322170.jpg
 author: Dinesh Chugtai

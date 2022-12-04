@@ -5,7 +5,7 @@ draft: false
 summary: 'Striving to be as real as possible, more like in King of the Hill rather than Beavis and Butthead, Mike Judge’s upcoming Silicon Valley TV show mixes in healthy doses of real startup life. That means TechCrunch Disrupt plays a big role in the show. And I guess that means you could be on the show too if you attended Disrupt SF last year.'
 tags:
   - TechCrunch
-  - Law
+  - video
 category: Other
 author: Dinesh Chugtai
 ---

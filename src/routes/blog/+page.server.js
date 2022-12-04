@@ -1,4 +1,5 @@
 import { posts } from '$lib/data/posts';
+import { tags } from '$lib/data/tags';
 import { error } from '@sveltejs/kit';
 
 /** @type {import('./$types').PageServerLoad} */
@@ -9,6 +10,7 @@ export async function load() {
 
 	return {
 		// eslint-disable-next-line no-unused-vars
-		posts: posts
+		posts: posts,
+		tags: tags
 	};
 }

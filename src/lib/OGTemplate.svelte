@@ -33,7 +33,7 @@
 		</div>
 	</div>
 	<div
-		style="left:{barWidth}px;top:0;bottom:0;right:0;position:absolute;align-items:center;justify-content:center;margin:20px;font-size:70px;width:auto;text-align:center;background-color:white;color:black;line-height:1.4;line-height: 90%;text-transform:lowercase;font-family:'Open Sans',sans-serif;"
+		style="left:{barWidth}px;top:0;bottom:0;right:0;position:absolute;align-items:center;justify-content:center;margin:20px;font-size:80px;width:auto;text-align:center;background-color:white;color:black;line-height:1.4;line-height: 90%;font-family:'Open Sans',sans-serif;"
 	>
 		{text}
 	</div>

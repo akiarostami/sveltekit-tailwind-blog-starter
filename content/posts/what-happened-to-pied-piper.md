@@ -4,9 +4,8 @@ date: '2022-07-01'
 draft: false
 summary: "Piedpiper.com is down for unknown reasons, and site's owner hasn't disclosed what happened to Piedpiper."
 tags:
-  - SiliconValley
-  - HBO
-  - SAFENetwork
+  - Site
+  - History
 category: Info
 image: https://www.videoproc.com/images/vp-seo/piedpiper-2015-homepage.jpg
 author: Richard Hendricks

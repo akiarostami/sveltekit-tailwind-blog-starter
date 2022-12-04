@@ -6,8 +6,8 @@
 </script>
 
 <footer>
-	<div class="mt-16 flex flex-col items-center">
-		<div class="mb-3 flex space-x-4">
+	<div class="mt-16 flex flex-col items-center border-t pt-6">
+		<div class="mb-3 flex space-x-2">
 			<SocialIcon icon="mail" url={siteConfig.email ? `mailto:${siteConfig.email}` : ''} />
 			<SocialIcon icon="github" url={siteConfig.github} />
 			<SocialIcon icon="facebook" url={siteConfig.facebook} />
@@ -17,7 +17,7 @@
 		</div>
 		<div class="mb-4 flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
 			<a href="/">{siteConfig.title}</a> &nbsp; • &nbsp; © {year}
-			{siteConfig.author}
+			{siteConfig.author} &nbsp; • &nbsp; <a href="/rss.xml">rss feed</a>
 		</div>
 	</div>
 </footer>
