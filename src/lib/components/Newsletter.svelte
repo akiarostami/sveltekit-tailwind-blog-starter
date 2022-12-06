@@ -35,14 +35,14 @@
 					placeholder="Email address"
 					class="form-control block w-full px-3 py-1 text-base bg-white dark:bg-gray-800 bg-clip-padding border rounded transition ease-in-out focus:text-gray-700 focus:outline-none focus:ring-0 {error
 						? 'border-red-500 focus:border-red-600'
-						: 'border-gray-300 dark:border-gray-600 focus:border-primary-600'}"
+						: 'border-gray-300 dark:border-gray-600 focus:border-primary-500 focus:dark:border-primary-500'}"
 				/>
 			</div>
 
 			<div>
 				<button
 					type="submit"
-					class="inline-block px-6 py-2 border-2 border-gray-300 dark:border-gray-600 font-medium text-xs leading-tight uppercase rounded focus:border-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+					class="inline-block px-6 py-2 border-2 border-gray-300 dark:border-gray-600 font-medium text-xs leading-tight uppercase rounded focus:bg-primary-500 focus:border-primary-500 focus:dark:border-primary-500 focus:text-white focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
 				>
 					{submitted ? 'Thank you!' : 'Subscribe'}
 				</button>

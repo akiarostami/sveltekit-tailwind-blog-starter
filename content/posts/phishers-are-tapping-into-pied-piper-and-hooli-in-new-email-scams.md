@@ -6,7 +6,6 @@ summary: 'If imitation is the sincerest form of flattery, HBO should perhaps be 
 tags:
   - scam
   - phishing
-category: Info
 image: https://thedrum-media.imgix.net/thedrum-prod/s3/news/tmp/126745/pied_piper_silicon_valley.png
 author: Richard Hendricks
 ---

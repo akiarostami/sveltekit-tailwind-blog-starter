@@ -6,7 +6,6 @@ summary: "Sarah Buhr's interview with Gunderson Dettmer for TechCrunch"
 tags:
   - TechCrunch
   - Law
-category: Other
 image: https://techcrunch.com/wp-content/uploads/2017/05/section_homepage_bg_2.jpg
 author: Dinesh Chugtai
 ---

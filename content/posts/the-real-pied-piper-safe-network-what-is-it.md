@@ -8,7 +8,6 @@ summary: 'Safe Network is the real-life Pied Piped from “Silicon Valley” com
 tags:
   - HBO
   - SAFENetwork
-category: Info
 author: Richard Hendricks
 ---
 

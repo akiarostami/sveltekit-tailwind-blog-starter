@@ -6,7 +6,6 @@ summary: 'Striving to be as real as possible, more like in King of the Hill rath
 tags:
   - TechCrunch
   - video
-category: Other
 author: Dinesh Chugtai
 ---
 

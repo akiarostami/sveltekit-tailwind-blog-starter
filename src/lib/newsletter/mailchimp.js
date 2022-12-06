@@ -5,19 +5,16 @@ import base64 from 'base-64';
 import siteConfig from '$settings/siteConfig';
 
 async function registerEmail(email) {
-	let MAILCHIMP = siteConfig.newsletter.mailchimp;
-	let MAILCHIMP_API_KEY = env.MAILCHIMP_API_KEY;
+	const MAILCHIMP = siteConfig.newsletter.mailchimp;
+	const MAILCHIMP_API_KEY = env.MAILCHIMP_API_KEY;
 
 	try {
-		let dc = MAILCHIMP.dc;
-		let list_id = MAILCHIMP.listId;
-		let url = `https://${dc}.api.mailchimp.com/3.0/lists/${list_id}/members`;
-		let password = MAILCHIMP_API_KEY;
+		const dc = MAILCHIMP.dc;
+		const list_id = MAILCHIMP.listId;
+		const url = `https://${dc}.api.mailchimp.com/3.0/lists/${list_id}/members`;
+		const password = MAILCHIMP_API_KEY;
 
-		let data = {
-			email_address: email,
-			status: 'subscribed'
-		};
+		const data = { email_address: email, status: 'subscribed' };
 
 		let headers = new Headers();
 		headers.append('Authorization', 'Basic ' + base64.encode('somestring:' + password));

@@ -31,7 +31,7 @@ const siteConfig = {
 		simpleAnalytics: false // true or false
 	},
 	newsletter: {
-		// supports mailchimp, buttondown, convertkit, klaviyo, revue, emailoctopus
+		// supports mailchimp, emailoctopus, buttondown, convertkit, klaviyo, revue
 		// Please add your .env file and modify it according to your selection
 		provider: 'mailchimp',
 		mailchimp: {

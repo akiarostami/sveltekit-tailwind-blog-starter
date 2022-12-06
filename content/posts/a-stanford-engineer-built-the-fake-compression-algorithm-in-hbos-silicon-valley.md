@@ -7,7 +7,6 @@ tags:
   - TheVerge
   - Stanford
   - Technology
-category: Other
 image: https://cdn.vox-cdn.com/uploads/chorus_asset/file/14788550/siliconvalley_promotionalstills2_1020.0.1412635415.jpg
 author: Dinesh Chugtai
 ---

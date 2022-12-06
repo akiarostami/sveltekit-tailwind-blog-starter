@@ -28,13 +28,13 @@ This is my first attempt to write something in SvelteKit. Most probably, I won't
   - [x] [google analytics](https://analytics.google.com/analytics/web/)
   - [x] [plausible](https://plausible.io/)
   - [x] [simple analytics](https://simpleanalytics.com/)
-- [ ] Support for different Newsletter systems
-  - [ ] mailchimp
-  - [ ] buttondown
-  - [ ] convertkit
-  - [ ] klaviyo
-  - [ ] revue
-  - [ ] emailoctopus
+- [x] Support for different Newsletter systems
+  - [x] mailchimp
+  - [x] buttondown
+  - [x] convertkit
+  - [x] klaviyo
+  - [x] revue
+  - [x] emailoctopus
 - [ ] Support for different discussion / comment systems
   - [ ] giscus
   - [ ] utterances

@@ -6,7 +6,6 @@ summary: '“I was thinking, actually, what if you had asked for less?” Pied P
 tags:
   - TechCrunch
   - HBO
-category: Other
 image: https://techcrunch.com/wp-content/uploads/2017/02/gettyimages-577322170.jpg
 author: Dinesh Chugtai
 ---

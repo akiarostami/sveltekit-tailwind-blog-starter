@@ -6,7 +6,6 @@ summary: "Piedpiper.com is down for unknown reasons, and site's owner hasn't dis
 tags:
   - Site
   - History
-category: Info
 image: https://www.videoproc.com/images/vp-seo/piedpiper-2015-homepage.jpg
 author: Richard Hendricks
 ---

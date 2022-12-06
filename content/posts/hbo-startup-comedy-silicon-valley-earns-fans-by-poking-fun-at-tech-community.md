@@ -7,7 +7,6 @@ tags:
   - FirstPost
   - HBO
   - Community
-category: Other
 author: Dinesh Chugtai
 ---
 
