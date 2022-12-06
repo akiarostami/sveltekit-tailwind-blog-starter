@@ -1,8 +1,6 @@
 <script>
-	import siteConfig from '$settings/siteConfig.js';
 	import Head from '$lib/Head.svelte';
 	import Blogs from '$lib/components/Blogs.svelte';
-	import Title from '$lib/components/Title.svelte';
 
 	export let data;
 	let posts = data.posts;

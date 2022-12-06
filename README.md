@@ -12,8 +12,9 @@ This is my first attempt to write something in SvelteKit. Most probably, I won't
 - [x] Easy style customization with [Tailwind 3](https://tailwindcss.com/)
 - [x] Great lighthouse score - [Lighthouse report](https://www.webpagetest.org/result/210111_DiC1_08f3670c3430bf4a9b76fc3b927716c5/)
 - [x] Mobile-friendly view
-- [ ] Blog posts, multiple authors, and projects included in the template by default
-- [x] Markdown support
+- [x] Blog posts and projects
+- [x] Multiple authors
+- [x] Markdown
 - [x] Support for Light and dark theme
 - [x] Support for tags - each unique tag will be its own page
 - [x] Support for Pre-render
@@ -23,21 +24,24 @@ This is my first attempt to write something in SvelteKit. Most probably, I won't
   - [ ] Links
   - [ ] Video
   - [ ] Image
-- [ ] Supports for different analytics systems
-  - [ ] [plausible](https://plausible.io/)
-  - [ ] [simple analytics](https://simpleanalytics.com/)
-  - [ ] google analytics
-- [ ] Support for multiple authors
-- [ ] Support for different Newsletter system
+- [x] Supports for different analytics systems
+  - [x] [google analytics](https://analytics.google.com/analytics/web/)
+  - [x] [plausible](https://plausible.io/)
+  - [x] [simple analytics](https://simpleanalytics.com/)
+- [ ] Support for different Newsletter systems
   - [ ] mailchimp
   - [ ] buttondown
   - [ ] convertkit
   - [ ] klaviyo
   - [ ] revue
   - [ ] emailoctopus
-- [ ] Netlify CMS
+- [ ] Support for different discussion / comment systems
+  - [ ] giscus
+  - [ ] utterances
+  - [ ] disqus
+- [x] Netlify CMS
 - [ ] Pagination
-- [ ] Search (fuse.js or [alternatives](https://github.com/leeoniya/uFuzzy#user-content-benchmark))
+- [ ] Search (perhaps using one of [these libraries](https://github.com/leeoniya/uFuzzy#user-content-benchmark))
 - [ ] SEO OpenGraph Info
 
 ## Installation & Customization
