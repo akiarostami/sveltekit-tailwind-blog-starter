@@ -1,4 +1,5 @@
 <script>
+	import { dev } from '$app/environment';
 	import { page } from '$app/stores';
 
 	let commentsLoaded = false;
@@ -6,6 +7,9 @@
 
 	export let slug = $page.params.slug;
 	export let config = {};
+
+	const uuuu = 'https://' + config.shortname + '.disqus.com/embed.js';
+	console.log('HERE >>>', uuuu);
 
 	function LoadComments() {
 		commentsLoaded = true;
@@ -28,6 +32,14 @@
 		}
 	}
 </script>
+
+<svelte:head>
+	{#if dev}
+		<script type="text/javascript">
+			var disqus_developer = 1;
+		</script>
+	{/if}
+</svelte:head>
 
 <div class="pt-6 pb-6 text-center text-gray-700 dark:text-gray-300">
 	{#if !commentsLoaded}
