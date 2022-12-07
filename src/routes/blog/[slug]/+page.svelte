@@ -1,7 +1,7 @@
 <script>
 	import Head from '$lib/Head.svelte';
 	import Blog from '$lib/components/Blog.svelte';
-	import Comments from '$lib/components/comments/index.svelte';
+	import Comments from '$lib/components/comment/index.svelte';
 
 	export let data;
 	const post = data.post;
