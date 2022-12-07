@@ -1,16 +1,16 @@
 import siteConfig from '$settings/siteConfig';
-import mailchimp from './mailchimp.js';
-import emailoctopus from './emailoctopus.js';
 import buttondown from './buttondown.js';
 import convertkit from './convertkit.js';
+import emailoctopus from './emailoctopus.js';
 import klaviyo from './klaviyo.js';
+import mailchimp from './mailchimp.js';
 import revue from './revue.js';
 
 const registerEmail = (email) => {
 	// skip if there's not newsletter provider is selected
-	if (!siteConfig.newsletter.provider) return;
+	if (!siteConfig.newsletter) return;
 
-	switch (siteConfig.newsletter.provider) {
+	switch (siteConfig.newsletter) {
 		case 'mailchimp':
 			return mailchimp(email);
 		case 'emailoctopus':

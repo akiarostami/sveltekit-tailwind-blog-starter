@@ -27,19 +27,15 @@ const siteConfig = {
 	analytics: {
 		// we support googleAnalytics, plausible, and simpleAnalytics
 		googleAnalyticsId: '', // e.g. UA-000000-2 or G-XXXXXXX
-		plausibleDataDomain: '', // e.g. pied-piper-blog.netlify.app
+		plausibleDomain: '', // e.g. pied-piper-blog.netlify.app
 		simpleAnalytics: false // true or false
 	},
-	newsletter: {
-		// supports mailchimp, emailoctopus, buttondown, convertkit, klaviyo, revue
-		// Please add your .env file and modify it according to your selection
-		provider: 'mailchimp',
-		mailchimp: {
-			dc: 'us19', // the data center for your account, for example "us6"
-			listId: 'b26ef51678' // your list id (https://mailchimp.com/help/find-audience-id/)
-			// MAILCHIMP_API_KEY should be added to the .env file
-		}
-	}
+
+	// supports buttondown, convertkit, emailoctopus, klaviyo, mailchimp, revue
+	// use false or null to disable newsletter
+	// check .env.example for settings needed values for each service
+	newsletter: 'mailchimp'
+
 	/*
 	comment: {
 		// If you want to use a commenting system other than giscus you have to add it to the

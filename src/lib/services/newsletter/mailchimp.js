@@ -2,16 +2,13 @@ import { error } from '@sveltejs/kit';
 import { env } from '$env/dynamic/private';
 import base64 from 'base-64';
 
-import siteConfig from '$settings/siteConfig';
-
 async function registerEmail(email) {
-	const MAILCHIMP = siteConfig.newsletter.mailchimp;
+	const MAILCHIMP_DC = env.MAILCHIMP_DC;
+	const MAILCHIMP_LIST_ID = env.MAILCHIMP_LIST_ID;
 	const MAILCHIMP_API_KEY = env.MAILCHIMP_API_KEY;
 
 	try {
-		const dc = MAILCHIMP.dc;
-		const list_id = MAILCHIMP.listId;
-		const url = `https://${dc}.api.mailchimp.com/3.0/lists/${list_id}/members`;
+		const url = `https://${MAILCHIMP_DC}.api.mailchimp.com/3.0/lists/${MAILCHIMP_LIST_ID}/members`;
 		const password = MAILCHIMP_API_KEY;
 
 		const data = { email_address: email, status: 'subscribed' };

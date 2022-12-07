@@ -4,12 +4,11 @@
 	import Transition from '$lib/Transition.svelte';
 	import Header from '$lib/Header.svelte';
 	import Footer from '$lib/Footer.svelte';
+	import Analytics from '$lib/components/Analytics.svelte';
 	import '../app.css';
 
 	export let data = {};
 </script>
-
-<!-- <Header /> -->
 
 <div class="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0">
 	<div class="flex h-screen flex-col justify-between">
@@ -23,6 +22,4 @@
 	</div>
 </div>
 
-<!-- <main id="content" class="min-h-screen">
-		<slot />
-</main> -->
+<Analytics />

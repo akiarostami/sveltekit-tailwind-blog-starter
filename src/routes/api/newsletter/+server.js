@@ -1,5 +1,5 @@
 import { error } from '@sveltejs/kit';
-import registerEmail from '$lib/newsletter';
+import registerEmail from '$lib/services/newsletter';
 
 export const POST = async ({ request }) => {
 	console.log('POSTING TO NEWSLETTER');
