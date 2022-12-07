@@ -1,9 +1,7 @@
 <script>
 	import Head from '$lib/Head.svelte';
-	import formatDate from '$utils/formatDate';
-	import Tag from '$lib/components/Tag.svelte';
 	import Blog from '$lib/components/Blog.svelte';
-	import Comments from '$lib/components/Comments/index.svelte';
+	import Comments from '$lib/components/comments/index.svelte';
 
 	export let data;
 	const post = data.post;
