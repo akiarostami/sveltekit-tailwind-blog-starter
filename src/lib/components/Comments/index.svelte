@@ -3,8 +3,6 @@
 	import Disqus from './Disqus.svelte';
 
 	const commentProvider = siteConfig.comment.provider;
-
-	console.log('>>> commentProvider: ', commentProvider);
 </script>
 
 {#if commentProvider === 'disqus'}

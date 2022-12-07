@@ -8,9 +8,6 @@
 	export let slug = $page.params.slug;
 	export let config = {};
 
-	const uuuu = 'https://' + config.shortname + '.disqus.com/embed.js';
-	console.log('HERE >>>', uuuu);
-
 	function LoadComments() {
 		commentsLoaded = true;
 

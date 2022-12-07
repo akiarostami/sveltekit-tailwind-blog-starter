@@ -4,7 +4,7 @@
 	import Transition from '$lib/Transition.svelte';
 	import Header from '$lib/Header.svelte';
 	import Footer from '$lib/Footer.svelte';
-	import Analytics from '$lib/components/Analytics/index.svelte';
+	import Analytics from '$lib/components/analytics/index.svelte';
 	import '../app.css';
 
 	export let data = {};
