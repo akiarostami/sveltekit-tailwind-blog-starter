@@ -1,8 +1,8 @@
 <script>
 	import siteConfig from '$settings/siteConfig';
-	import GoogleAnalytics from './analytics/GoogleAnalytics.svelte';
-	import Plausible from './analytics/Plausible.svelte';
-	import SimpleAnalytics from './analytics/SimpleAnalytics.svelte';
+	import GoogleAnalytics from './GoogleAnalytics.svelte';
+	import Plausible from './Plausible.svelte';
+	import SimpleAnalytics from './SimpleAnalytics.svelte';
 
 	const GoogleAnalyticsId = siteConfig.analytics.googleAnalyticsId;
 	const PlausibleDomain = siteConfig.analytics.plausibleDomain;

@@ -13,8 +13,14 @@
 		<!-- <link rel="manifest" href="/static/favicons/site.webmanifest" /> -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,800;1,800&family=Oswald:wght@200;300;400;500;600;700&family=Saira:wght@700&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Saira:wght@700&display=swap" rel="stylesheet">
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,800;1,800&family=Oswald:wght@200;300;400;500;600;700&family=Saira:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Saira:wght@700&display=swap"
+			rel="stylesheet"
+		/>
 		%sveltekit.head%
 	</head>
 	<!-- <body class="flex flex-col h-screen"> -->
@@ -22,7 +28,7 @@
 		class="bg-white text-black antialiased dark:bg-gray-900 dark:text-white"
 		data-sveltekit-prefetch
 	>
-		%sveltekit.body%
+		<div style="display: contents">%sveltekit.body%</div>
 	</body>
 	<script>
 		if (localStorage.theme === 'dark') document.documentElement.classList.add('dark');

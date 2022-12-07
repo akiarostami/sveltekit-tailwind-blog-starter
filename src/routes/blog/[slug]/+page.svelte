@@ -3,6 +3,7 @@
 	import formatDate from '$utils/formatDate';
 	import Tag from '$lib/components/Tag.svelte';
 	import Blog from '$lib/components/Blog.svelte';
+	import Comments from '$lib/components/Comments/index.svelte';
 
 	export let data;
 	const post = data.post;
@@ -12,3 +13,4 @@
 <Head title={post.title} />
 
 <Blog {post} {author} />
+<Comments />
