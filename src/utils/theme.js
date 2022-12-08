@@ -2,17 +2,27 @@ import { browser } from '$app/environment';
 
 import siteConfig from '$settings/siteConfig.js';
 
+const isLocalStorageAvailable = () => {
+	var test = 'test';
+	try {
+		localStorage.setItem(test, test);
+		localStorage.removeItem(test);
+		return true;
+	} catch (e) {
+		return false;
+	}
+};
 const isDarkMode = () => {
 	let darkMode = false;
 	if (browser) {
-		if ('theme' in localStorage) {
+		if (isLocalStorageAvailable() && 'theme' in localStorage) {
 			darkMode = localStorage.theme === 'dark';
 		} else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
 			darkMode = true;
 		} else {
 			darkMode = siteConfig.theme === 'dark';
 		}
-	} else {
+	} else if (isLocalStorageAvailable()) {
 		darkMode = localStorage.theme === 'dark';
 	}
 

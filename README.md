@@ -35,10 +35,9 @@ This is my first attempt to write something in SvelteKit. Most probably, I won't
   - [x] klaviyo
   - [x] revue
   - [x] emailoctopus
-- [ ] Support for different discussion / comment systems
-  - [ ] giscus
-  - [ ] utterances
-  - [ ] disqus
+- [x] Support for different discussion / comment systems
+  - [x] giscus
+  - [x] utterances
 - [x] Netlify CMS
 - [ ] Pagination
 - [ ] Search (perhaps using one of [these libraries](https://github.com/leeoniya/uFuzzy#user-content-benchmark))

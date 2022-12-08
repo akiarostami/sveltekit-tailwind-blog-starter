@@ -85,15 +85,6 @@
 					<div class="prose max-w-none pt-10 pb-8 dark:prose-dark">
 						{@html post.content}
 					</div>
-					<div class="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
-						<!-- <a href={"#"/*discussUrl(slug)*/} rel="nofollow"> -->
-						<a href={'#'} rel="nofollow">
-							{'Discuss on Twitter'}
-						</a>
-						{` • `}
-						<!-- <a href={editUrl(fileName)}>{'View on GitHub'}</a> -->
-					</div>
-					<!-- <Comments {frontMatter} /> -->
 				</div>
 				<footer class="">
 					<div

@@ -7,11 +7,12 @@ import mdsvexConfig from './mdsvex.config.js';
 const config = {
 	extensions: ['.svelte', ...mdsvexConfig.extensions],
 	kit: {
-		adapter: adapter()
-		// remove this if you don't want prerendering
-		// prerender: {
-		// 	entries: ['*', '/sitemap.xml', '/rss.xml']
-		// }
+		adapter: adapter(),
+
+		// remove this if you are not using giscus comment system
+		csp: {
+			mode: 'auto'
+		}
 	},
 	preprocess: [mdsvex(mdsvexConfig), preprocess({ postcss: true })]
 };
