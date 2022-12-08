@@ -9,10 +9,8 @@ const config = {
 	kit: {
 		adapter: adapter(),
 
-		// remove this if you are not using giscus comment system
-		csp: {
-			mode: 'auto'
-		}
+		// remove this if you're not using comment system
+		csp: { mode: 'auto' }
 	},
 	preprocess: [mdsvex(mdsvexConfig), preprocess({ postcss: true })]
 };
