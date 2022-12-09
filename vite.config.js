@@ -24,9 +24,7 @@ const config = {
 	resolve: {
 		alias: {
 			$icons: path.resolve('./src/icons'),
-			$data: path.resolve('./src/data'),
-			$utils: path.resolve('./src/utils'),
-			$settings: path.resolve('./src/settings')
+			$utils: path.resolve('./src/utils')
 		}
 	},
 	plugins: [sveltekit(), svg(svgPluginOptions), rawFonts(['.ttf'])],

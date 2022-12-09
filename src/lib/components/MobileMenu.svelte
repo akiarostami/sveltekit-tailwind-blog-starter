@@ -1,5 +1,5 @@
 <script>
-	import headerNavLinks from '$settings/headerNavLinks.js';
+	import { navLinks } from '$lib/config';
 
 	let isOpen = false;
 
@@ -61,7 +61,7 @@
 			</button>
 		</div>
 		<nav class="fixed mt-8 h-full">
-			{#each headerNavLinks as link}
+			{#each navLinks as link}
 				<div class="px-12 py-4">
 					<a
 						href={link.href}

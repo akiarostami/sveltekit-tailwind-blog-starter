@@ -21,4 +21,4 @@
 	</p>
 </div>
 
-<Blogs title="Latest Posts" h2 {posts} search={false} count={3} />
+<Blogs title="Latest Posts" h2 {posts} search={true} count={3} />

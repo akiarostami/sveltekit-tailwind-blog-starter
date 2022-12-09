@@ -1,7 +1,7 @@
 <script>
 	import Head from '$lib/Head.svelte';
 	import SocialIcon from '$lib/components/SocialIcon.svelte';
-	import siteConfig from '$settings/siteConfig';
+	import { config } from '$lib/config';
 	import Title from '$lib/components/Title.svelte';
 
 	export let data;
@@ -16,12 +16,12 @@
 	</div>
 	<div class="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
 		<div class="flex flex-col items-center py-6">
-			<img src={siteConfig.siteLogo} alt="logo" class="h-64 w-64" />
+			<img src={config.siteLogo} alt="logo" class="h-64 w-64" />
 			<div class="flex space-x-2 pt-4">
-				<SocialIcon icon="mail" url={`mailto:${siteConfig.email}`} />
-				<SocialIcon icon="github" url={siteConfig.github} />
-				<SocialIcon icon="linkedin" url={siteConfig.linkedin} />
-				<SocialIcon icon="twitter" url={siteConfig.twitter} />
+				<SocialIcon icon="mail" url={`mailto:${config.email}`} />
+				<SocialIcon icon="github" url={config.github} />
+				<SocialIcon icon="linkedin" url={config.linkedin} />
+				<SocialIcon icon="twitter" url={config.twitter} />
 			</div>
 		</div>
 		<div class="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">

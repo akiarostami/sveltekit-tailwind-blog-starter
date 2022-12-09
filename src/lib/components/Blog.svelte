@@ -1,7 +1,7 @@
 <script>
-	import siteConfig from '$settings/siteConfig.js';
+	import { config } from '$lib/config';
 	import Tag from '$lib/components/Tag.svelte';
-	import SocialIcon from '$lib/components/SocialIcon.svelte';
+	import Author from '$lib/components/Author.svelte';
 
 	export let post;
 	export let author;
@@ -33,7 +33,7 @@
 							<dt class="sr-only">Published on</dt>
 							<dd class="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
 								<time dateTime={post.date}>
-									{new Date(post.date).toLocaleDateString(siteConfig.locale, {
+									{new Date(post.date).toLocaleDateString(config.locale, {
 										weekday: 'long',
 										year: 'numeric',
 										month: 'long',
@@ -56,25 +56,7 @@
 							class="flex justify-center space-x-8 sm:space-x-12 xl:block xl:space-x-0 xl:space-y-8"
 						>
 							<li class="flex items-center space-x-2">
-								{#if author.avatar}
-									<img
-										src={author.avatar}
-										width="38px"
-										height="38px"
-										alt="avatar"
-										class="h-10 w-10 rounded-full"
-									/>
-								{/if}
-								<dl class="whitespace-nowrap text-sm font-medium leading-5">
-									<dt class="sr-only">Name</dt>
-									<dd class="text-gray-900 dark:text-gray-100">{author.name}</dd>
-									<dt class="sr-only">Twitter</dt>
-									<dd>
-										<SocialIcon icon="twitter" url={author.twitter} small>
-											{author.twitter?.replace('https://twitter.com/', '@')}
-										</SocialIcon>
-									</dd>
-								</dl>
+								<Author author={author.name} avatar={author.avatar} twitter={author.twitter} />
 							</li>
 						</ul>
 					</dd>

@@ -1,9 +1,9 @@
 <script>
 	// can use to design: https://og-playground.vercel.app/
 	export let text = 'Official Website';
-	import siteConfig from '$settings/siteConfig';
-	const height = siteConfig.og.height;
-	const color = siteConfig.primaryColor;
+	import { config, openGraph } from '$lib/config';
+	const height = openGraph.height;
+	const color = config.primaryColor;
 	const barWidth = 140;
 </script>
 
@@ -28,7 +28,7 @@
 			>
 
 			<div style="font-size:80px;color:{color};font-weight:800;line-height:85%;margin-left:20px;">
-				{siteConfig.headerTitle}
+				{config.headerTitle}
 			</div>
 		</div>
 	</div>

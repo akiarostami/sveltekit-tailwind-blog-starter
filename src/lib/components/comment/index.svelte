@@ -1,17 +1,17 @@
 <script>
-	import siteConfig from '$settings/siteConfig';
+	import { comment } from '$lib/config';
 	import Giscus from './Giscus.svelte';
 	import Utterances from './Utterances.svelte';
 
-	const commentProvider = siteConfig.comment.provider;
+	const commentProvider = comment.provider;
 </script>
 
 {#if commentProvider}
 	<div class="pt-6 pb-6 text-center text-gray-700 dark:text-gray-300 border-t">
 		{#if commentProvider === 'giscus'}
-			<Giscus config={siteConfig.comment.giscusConfig} />
+			<Giscus config={comment.giscus} />
 		{:else if commentProvider === 'utterances'}
-			<Utterances config={siteConfig.comment.utterancesConfig} />
+			<Utterances config={comment.utterances} />
 		{/if}
 	</div>
 {/if}

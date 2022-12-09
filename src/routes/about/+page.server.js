@@ -1,4 +1,4 @@
-import { getEntries } from '$lib/data/entries.js';
+import { getEntries } from '$utils/entries.js';
 
 const authors = getEntries('authors');
 

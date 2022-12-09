@@ -1,6 +1,6 @@
 import RSS from 'rss';
-import siteConfig from '$settings/siteConfig.js';
-import { posts } from '$lib/data/posts';
+import { config } from '$lib/config.js';
+import { getEntries } from '$utils/entries.js';
 
 export const prerender = true;
 
@@ -8,15 +8,16 @@ export const prerender = true;
 /** @type {import('@sveltejs/kit').RequestHandler} */
 export async function GET() {
 	const feed = new RSS({
-		title: siteConfig.title + ' - RSS Feed',
-		site_url: siteConfig.siteUrl,
-		feed_url: siteConfig.siteUrl + '/rss.xml'
+		title: config.title + ' - RSS Feed',
+		site_url: config.siteUrl,
+		feed_url: config.siteUrl + '/rss.xml'
 	});
 
+	const posts = getEntries('posts');
 	posts.forEach((posts) => {
 		feed.item({
 			title: posts.title,
-			url: siteConfig.siteUrl + `/${posts.slug}`,
+			url: config.siteUrl + `/${posts.slug}`,
 			date: posts.date,
 			description: posts.summary
 		});

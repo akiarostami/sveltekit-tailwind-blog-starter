@@ -1,9 +1,10 @@
-import { posts } from '$lib/data/posts';
-import { authors } from '$lib/data/authors';
 import { error } from '@sveltejs/kit';
+import { getEntries } from '$utils/entries.js';
 
 /** @type {import('./$types').PageServerLoad} */
 export async function load({ params }) {
+	const posts = getEntries('posts');
+	const authors = getEntries('authors');
 	const { slug } = params;
 	const post = posts.find((p) => p.slug === slug);
 	const author = authors.find((a) => a.name === post.author);

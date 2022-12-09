@@ -13,14 +13,10 @@
 		"paths": {
 			"$icons": ["./src/icons"],
 			"$icons/*": ["./src/icons/*"],
-			"$data": ["./src/data"],
-			"$data/*": ["./src/data/*"],
 			"$lib": ["./src/lib"],
 			"$lib/*": ["./src/lib/*"],
 			"$utils": ["./src/utils"],
-			"$utils/*": ["./src/utils/*"],
-			"$settings": ["./src/settings"],
-			"$settings/*": ["./src/settings/*"]
+			"$utils/*": ["./src/utils/*"]
 		}
 	},
 	"include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.svelte"]

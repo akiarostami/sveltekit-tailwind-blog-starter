@@ -1,13 +1,13 @@
-import siteConfig from '$settings/siteConfig.js';
-import nav from '$settings/headerNavLinks.js';
-import { posts } from '$lib/data/posts';
+import { config, navLinks } from '$lib/config';
+import { getEntries } from '$utils/entries.js';
 
 export const prerender = true;
 
 const trimSlash = (str) => str.replace(/^\/|\/$/g, '');
 
 export async function GET() {
-	const pages = nav;
+	const pages = navLinks;
+	const posts = getEntries('posts');
 	const body = sitemap(posts, pages);
 
 	return new Response(body, {
@@ -28,7 +28,7 @@ const sitemap = (posts, pages) => `<?xml version="1.0" encoding="UTF-8" ?>
     xmlns:video="https://www.google.com/schemas/sitemap-video/1.1"
   >
     <url>
-      <loc>${siteConfig.siteUrl}</loc>
+      <loc>${config.siteUrl}</loc>
       <changefreq>daily</changefreq>
       <priority>0.7</priority>
     </url>
@@ -36,7 +36,7 @@ const sitemap = (posts, pages) => `<?xml version="1.0" encoding="UTF-8" ?>
 			.map(
 				(page) => `
     <url>
-      <loc>${siteConfig.siteUrl}/${trimSlash(page.href)}</loc>
+      <loc>${config.siteUrl}/${trimSlash(page.href)}</loc>
       <changefreq>daily</changefreq>
       <priority>0.7</priority>
     </url>
@@ -49,7 +49,7 @@ const sitemap = (posts, pages) => `<?xml version="1.0" encoding="UTF-8" ?>
 					? null
 					: `
     <url>
-      <loc>${siteConfig.siteUrl}/${post.slug}</loc>
+      <loc>${config.siteUrl}/${post.slug}</loc>
       <changefreq>daily</changefreq>
       <priority>0.7</priority>
     </url>

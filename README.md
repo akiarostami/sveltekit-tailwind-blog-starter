@@ -40,7 +40,7 @@ This is my first attempt to write something in SvelteKit. Most probably, I won't
   - [x] utterances
 - [x] Netlify CMS
 - [ ] Pagination
-- [ ] Search (perhaps using one of [these libraries](https://github.com/leeoniya/uFuzzy#user-content-benchmark))
+- [x] search
 - [ ] SEO OpenGraph Info
 
 ## Installation & Customization
@@ -58,17 +58,16 @@ npm run dev
 ### Customization
 
 - Customize `tailwind.config.cjs` for all tailwind settings and configurations
-- Customize `siteConfig.js` for all site-related settings
-- Modify `headerNavLinks.js` to customize navigation links
+- Customize `$lib/config.js` for all site-related settings and navigation links
 - SSR - by default it's ON.
-- `src/settings/siteConfig.js` - contains most of the site related information which should be modified for a user's need.
+- `src/config.js` - contains most of the site related information which should be modified for a user's need.
 - `src/settings/authors/default.md` - default author information (required). Additional authors can be added as files in `data/authors`.
 - `src/settings/projectsData.js` - data used to generate styled card on the projects page.
 - `src/settings/headerNavLinks.js` - navigation links.
 - `content/posts`, `content/authors`, `content/projects` - replace with your own blog posts, authors, and projects.
 - `static/img` - folder used for storing and serving images
 - `static/logo.svg`, `static/favicon.ico`, `static/icon-xxx.png` - replace with your own logo.
-- `tailwind.config.cjs` and `src/settings/base.css` - contain the tailwind stylesheet which can be modified to change the overall look and feel of the site.
+- `tailwind.config.cjs` and `src/base.css` - contain the tailwind stylesheet which can be modified to change the overall look and feel of the site.
 - `components/MDXComponents.js` - pass your own JSX code or React component by specifying it over here. You can then call them directly in the `.mdx` or `.md` file. By default, a custom link and image component is passed.
 - `layouts` - main templates used in pages.
 - `routes` - pages to route to. Read the [SvelteKit documentation](https://kit.svelte.dev/docs) for more information.

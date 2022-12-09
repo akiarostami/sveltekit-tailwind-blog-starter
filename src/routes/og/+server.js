@@ -5,10 +5,10 @@ import Saira from '$lib/fonts/Saira-ExtraBold.ttf';
 import OpenSans from '$lib/fonts/OpenSans-ExtraBold.ttf';
 import { html as toReactNode } from 'satori-html';
 import OGTemplate from '$lib/OGTemplate.svelte';
-import siteConfig from '$settings/siteConfig';
+import { openGraph } from '$lib/config';
 
-const width = siteConfig.og.width;
-const height = siteConfig.og.height;
+const width = openGraph.width;
+const height = openGraph.height;
 
 /** @type {import('./$types').RequestHandler} */
 export const GET = async ({ url }) => {

@@ -1,6 +1,5 @@
 <script>
 	import { dev } from '$app/environment';
-	import siteConfig from '$settings/siteConfig';
 
 	let domain = '';
 </script>

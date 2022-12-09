@@ -1,18 +1,18 @@
 <script>
-	import siteConfig from '$settings/siteConfig.js';
+	import { config } from '$lib/config';
 
 	export let title = 'Official Website';
-	export let description = siteConfig.description;
-	export let author = siteConfig.author;
-	export let url = siteConfig.siteUrl;
-	export let domain = siteConfig.domain;
+	export let description = config.description;
+	export let author = config.author;
+	export let url = config.siteUrl;
+	export let domain = config.domain;
 	export let rtl = false;
 	let titleFromUrl = url.split('/').pop().replace('-', ' ');
 	export let img = `${url}/og?message=${rtl ? titleFromUrl : title}`;
 </script>
 
 <svelte:head>
-	<title>{title} | {siteConfig.title}</title>
+	<title>{title} | {config.title}</title>
 	<meta name="description" content={description} />
 	<meta name="author" content={author} />
 
