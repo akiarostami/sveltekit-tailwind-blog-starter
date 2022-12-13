@@ -33,7 +33,7 @@
 
 ## About Sveltekit Tailwind Blog Starter
 
-I've been looking for a good, flexible template for [SvelteKit](https://kit.svelte.dev/) / [Tailwind CSS](https://tailwindcss.com/), but all templates I found were either too simple. missing some needed features, or were too difficult to customize (or both). I loved [Timothy Lin](https://github.com/timlrx/)'s simple but feature-rich [Tailwind Nextjs Started Blog](https://github.com/timlrx/tailwind-nextjs-starter-blog), so I decided to port that to SvelteKit, and add a few things I needed, including [Netlify CMS](https://www.netlifycms.org/), dynamic [Open Graph](https://ogp.me/) image (og:image) support.
+I've been looking for a good, flexible template for [SvelteKit](https://kit.svelte.dev/) / [Tailwind CSS](https://tailwindcss.com/), but all the templates I found were either too simple, missing some needed features, or were too difficult to customize (or both). I loved [Timothy Lin](https://github.com/timlrx/)'s simple but feature-rich [Tailwind Nextjs Started Blog](https://github.com/timlrx/tailwind-nextjs-starter-blog), so I decided to port that to SvelteKit, and add a few things I needed, including [Netlify CMS](https://www.netlifycms.org/), dynamic [Open Graph](https://ogp.me/) image (og:image) support.
 
 This is my first attempt to write something in SvelteKit. **Most probably, I won't be maintaining this template much, and won't be adding features to it.** Feel free to grab a copy and use it as you wish.
 
@@ -44,34 +44,34 @@ This is my first attempt to write something in SvelteKit. **Most probably, I won
 - [x] Great lighthouse score - [Lighthouse report](https://www.webpagetest.org/result/221212_BiDc65_FQC/)
 - [x] Mobile-friendly view
 - [x] Blog posts
-      = [x] Static pages (projects)
+- [x] Static pages (projects)
 - [x] Single or Multiple authors
 - [x] Markdown
 - [x] Markdown components
   - [x] External Links
   - [x] YouTube Video
-- [x] Support for Light and dark theme
+- [x] Support for light and dark theme
 - [x] Netlify CMS
 - [x] Search
 - [x] Blog post tags, and tag filtering
 - [x] Support for Pre-render
 - [x] OpenGraph Information
-- [x] SEO friendly with RSS feed, sitemaps, and Open Graph support
+- [x] SEO-friendly with RSS feed, sitemaps, and Open Graph support
 - [x] Open Gram Image (og:image)
 - [x] Analytics:
-  - [x] Supports [google analytics](https://analytics.google.com/analytics/web/)
+  - [x] Supports [Google Analytics](https://analytics.google.com/analytics/web/)
   - [x] Supports [plausible](https://plausible.io/)
   - [x] Supports [simple analytics](https://simpleanalytics.com/)
 - [x] Newsletter / Mailing List
-  - [x] Supports Mailchimp
-  - [x] Supports Buttondown
-  - [x] Supports Convertkit
-  - [x] Supports Klaviyo
-  - [x] Supports Revue
-  - [x] Supports Emailoctopus
+  - [x] Supports [Mailchimp](https://mailchimp.com/)
+  - [x] Supports [Buttondown](https://buttondown.email/)
+  - [x] Supports [Convertkit](https://convertkit.com/)
+  - [x] Supports [Klaviyo](https://www.klaviyo.com/)
+  - [x] Supports [Revue](https://www.aweber.com/)
+  - [x] Supports [Emailoctopus](https://emailoctopus.com/)
 - [x] Discussion / Commenting
-  - [x] Supports giscus
-  - [x] Supports utterances
+  - [x] Supports [giscus](https://giscus.app/)
+  - [x] Supports [utterances](https://utteranc.es/)
 - [ ] Pagination
 
 ## How To Use
@@ -101,21 +101,21 @@ $ npm start
 - Site-specific basic css settings are available in `src/base.css`
 - All site-related settings, navigation, analytics, mailing list, and commenting system settings are in `src/lib/config.js`
 - Mailing list keys should be set in environment variables. Find the name of the environment variables in `.env.example`
-- By default pre-rendering is ON for all pages. You can change that from `/src/routes/+layout.svelte` file by changing setting `export const prerender = false;`.
+- `Pre-rendering` is ON for all pages by default. You can change that from `/src/routes/+layout.svelte` file by changing setting `export const prerender = false;`.
 - `sr/lib/config.js` - contains most of the site related information which should be modified for a user's need.
 - All contents (_Blog Posts_, _Projects_, and _Authors_) are stored under the `content` folder.
 - All blog and project images are stored under the `static/img` folder.
 - Top navigation menu can be customized in the `config.js` file.
 - By default _Multi User_ feature is on, and each _author_ should have a profile file in `content/authors` folder. If you only have one user for your blog, you can set `multiuser: false` in the `config.js` file, and set the admin user into in the same file in the `user` section.
 - Remember to replace `static/logo.svg`, `static/logo.png`, `static/favicon.ico`, and `static/icon-xxx.png` with your own logo.
-- `routes` - pages to route to. Read the [SvelteKit documentation](https://kit.svelte.dev/docs) for more information.
+- `routes`: read the [SvelteKit documentation](https://kit.svelte.dev/docs) for all routing information.
 - Site fonts are included in `app.html` and linked from [Google Fonts](https://fonts.google.com), and set in tailwind's config file. For a better site performance and ranking consider hosting your own fonts.
 - Please note that Open Graph Image (og:image) needs a local copy of the fonts, which are available under `src/lib/fonts`.
 - Standard `markdown` is supported in all blog posts and project pages. Markdown configurations are set in `mdsvex.config.js` file.
 - Both [`rehype`](https://github.com/rehypejs/rehype) and [`remark`](https://remark.js.org/) Plugins can be used to extend the formatting.
 - Two markdown plugins are added by default:
   - [`rehype-external-links`](https://github.com/rehypejs/rehype-external-links) to open all content links in a new tab
-  - A custom YouTube plugin was made to show how to make custom plugins. You this tag to add a formatted YouTube videos using this format: [`<youtube id="dQw4w9WgXcQ" title="The Best Cat Video Ever" />`](https://www.youtube.com/watch?v=dQw4w9WgXcQ).
+  - A custom plugin was made to show how to make custom plugins: the following tag can be used to add a formatted YouTube videos using this format: [`<youtube id="dQw4w9WgXcQ" title="The Best Cat Video Ever" />`](https://www.youtube.com/watch?v=dQw4w9WgXcQ).
 
 ## Deploy
 
@@ -143,7 +143,7 @@ You're all set, and can access your site admin from `yousite.com/admin`. You can
 
 ## Credits
 
-Along all the open-source packages used for this starter, I used or were inspired by the following:
+Beside all the open-source packages used for this starter, I used or were inspired by the following:
 
 - [Timothy Lin](https://github.com/timlrx/)'s [Tailwind Nextjs Started Blog](https://github.com/timlrx/tailwind-nextjs-starter-blog)
 - Geoff Rich's [Creative dynamic social card images with Svelte components](https://geoffrich.net/posts/svelte-social-image/)
