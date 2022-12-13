@@ -12,7 +12,7 @@
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
-		"@poppanator/sveltekit-svg": "^1.1.1",
+		"@poppanator/sveltekit-svg": "^2.0.0",
 		"@resvg/resvg-js": "^2.2.0",
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
@@ -26,20 +26,20 @@
 		"github-slugger": "^2.0.0",
 		"mdsvex": "^0.10.6",
 		"mdsvex-relative-images": "^1.0.3",
-		"postcss": "^8.4.19",
+		"postcss": "^8.4.20",
 		"prettier": "^2.8.1",
 		"prettier-plugin-svelte": "^2.9.0",
 		"rehype-external-links": "^2.0.1",
 		"rss": "^1.2.2",
-		"satori": "^0.0.43",
-		"satori-html": "^0.3.0",
+		"satori": "^0.0.44",
+		"satori-html": "^0.3.2",
 		"svelte": "^3.54.0",
 		"svelte-check": "^2.10.2",
-		"svelte-preprocess": "^4.10.7",
+		"svelte-preprocess": "^5.0.0",
 		"tailwindcss": "^3.2.4",
 		"typescript": "^4.9.4",
 		"unist-util-visit": "^4.1.1",
-		"vite": "^4.0.0"
+		"vite": "^4.0.1"
 	},
 	"type": "module"
 }
