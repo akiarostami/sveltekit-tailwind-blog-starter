@@ -11,7 +11,9 @@ author: Dinesh Chugtai
 
 By [Matt Burns](https://techcrunch.com/author/jodi-jahic/) / [TechCrunch](https://techcrunch.com/2014/03/19/of-course-techcrunch-disrupt-is-in-mike-judges-silicon-valley-hbo-show/)
 
-<iframe width="747" height="420" src="https://www.youtube.com/embed/wX3H3tQxUKw" title="Silicon Valley: Season 1 with Mike Judge and Alec Berg | HBO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<youtube id="wX3H3tQxUKw" title="Silicon Valley: Season 1 with Mike Judge and Alec Berg | HBO" />
+
+<!-- [Silicon Valley: Season 1 with Mike Judge and Alec Berg | HBO](https://youtu.be/wX3H3tQxUKw) -->
 
 Striving to be as real as possible, more like in _King of the Hill_ rather than _Beavis and Butthead_, Mike Judge’s upcoming [Silicon Valley TV show](http://www.hbo.com/silicon-valley#/silicon-valley/index.html) mixes in healthy doses of real startup life. That means TechCrunch Disrupt plays a big role in the show. And I guess that means you could be on the show too if you attended Disrupt SF last year.
 

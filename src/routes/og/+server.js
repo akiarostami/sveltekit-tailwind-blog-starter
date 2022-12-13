@@ -4,7 +4,7 @@ import { Resvg } from '@resvg/resvg-js';
 import Saira from '$lib/fonts/Saira-ExtraBold.ttf';
 import OpenSans from '$lib/fonts/OpenSans-ExtraBold.ttf';
 import { html as toReactNode } from 'satori-html';
-import OGTemplate from '$lib/OGTemplate.svelte';
+import OGTemplate from '$lib/components/OGTemplate.svelte';
 import { openGraph } from '$lib/config';
 
 const width = openGraph.width;

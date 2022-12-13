@@ -1,5 +1,5 @@
 <script>
-	import Head from '$lib/Head.svelte';
+	import Head from '$lib/components/layout/Head.svelte';
 	import Blogs from '$lib/components/Blogs.svelte';
 
 	export let data;

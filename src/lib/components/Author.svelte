@@ -9,7 +9,7 @@
 </script>
 
 {#if avatar}
-	<img src={avatar} width="38px" height="38px" alt="avatar" class="h-10 w-10 rounded-full" />
+	<img src={avatar} width="38px" height="38px" alt="avatar" class="h-10 w-10 rounded-lg" />
 {/if}
 <dl class="whitespace-nowrap text-sm font-medium leading-5">
 	<dt class="sr-only">Author</dt>

@@ -1,5 +1,5 @@
 <script>
-	import Head from '$lib/Head.svelte';
+	import Head from '$lib/components/layout/Head.svelte';
 	import SocialIcon from '$lib/components/SocialIcon.svelte';
 	import { config } from '$lib/config';
 	import Title from '$lib/components/Title.svelte';

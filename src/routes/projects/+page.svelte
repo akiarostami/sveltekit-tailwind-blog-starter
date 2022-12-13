@@ -1,5 +1,4 @@
 <script>
-	import Head from '$lib/Head.svelte';
 	import Card from '$lib/components/Card.svelte';
 	import Title from '$lib/components/Title.svelte';
 
