@@ -1,7 +1,7 @@
 <script>
 	import { config } from '$lib/config';
 
-	export let title = config.headerTitle;
+	export let title = 'Official Website';
 	export let description = config.description;
 	export let author = config.author;
 	export let url = config.siteUrl;

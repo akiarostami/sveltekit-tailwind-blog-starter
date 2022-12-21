@@ -11,8 +11,8 @@
 		"strict": false,
 		"baseUrl": ".",
 		"paths": {
-			"$icons": ["./src/lib/icons"],
-			"$icons/*": ["./src/lib/icons/*"],
+			"$icons": ["./src/icons"],
+			"$icons/*": ["./src/icons/*"],
 			"$lib": ["./src/lib"],
 			"$lib/*": ["./src/lib/*"],
 			"$utils": ["./src/utils"],

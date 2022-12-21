@@ -5,9 +5,10 @@
 
 	export let data;
 	const post = data.post;
+	const author = data.author;
 </script>
 
 <Head title={post.title} />
 
-<Blog {post} />
+<Blog {post} {author} />
 <Comments />

@@ -23,7 +23,7 @@ const svgPluginOptions = {
 const config = {
 	resolve: {
 		alias: {
-			$icons: path.resolve('./src/lib/icons'),
+			$icons: path.resolve('./src/icons'),
 			$utils: path.resolve('./src/utils')
 		}
 	},
