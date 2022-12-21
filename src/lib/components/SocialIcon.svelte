@@ -5,6 +5,7 @@
 	import IconYoutube from '$lib/icons/youtube.svg';
 	import IconLinkedin from '$lib/icons/linkedin.svg';
 	import IconTwitter from '$lib/icons/twitter.svg';
+	import IconInstagram from '$lib/icons/instagram.svg';
 
 	export let url = '';
 	export let icon = '';
@@ -19,7 +20,8 @@
 		{ caption: 'facebook', component: IconFacebook },
 		{ caption: 'youtube', component: IconYoutube },
 		{ caption: 'linkedin', component: IconLinkedin },
-		{ caption: 'twitter', component: IconTwitter }
+		{ caption: 'twitter', component: IconTwitter },
+		{ caption: 'instagram', component: IconInstagram }
 	];
 
 	let svg = options.find((option) => option.caption === icon)?.component;

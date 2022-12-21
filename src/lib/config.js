@@ -1,28 +1,23 @@
 export const config = {
-	title: 'Pied Piper (un)official blog',
+	title: 'رو به رو - مجموعه مقالات ترجمه شده',
 	author: 'Ahmad Kiarostami',
-	headerTitle: 'Pied Piper',
-	description: 'Pied Piper (un)official blog, created with Sveltekit and Tailwind.css',
+	headerTitle: 'رو به رو',
+	description: 'محموعه مقالات ترجمه شده',
 	language: 'en-us',
-	theme: 'dark', // system, dark or light
-	domain: 'http://www.piedpiper.com/',
-	siteUrl: 'https://pied-piper-blog.netlify.app',
-	siteRepo: 'https://github.com/akiarostami/sveltekit-tailwind-blog-starter',
+	theme: 'light', // system, dark or light
+	domain: 'http://www.rouberou.com/',
+	siteUrl: 'https://www.rouberou.com/',
+	// siteRepo: 'https://github.com/akiarostami/sveltekit-tailwind-blog-starter',
 	siteLogo: '/icon-512.png',
 	// image: '/img/avatar.png',
-	email: 'info@piedpiper.com',
-	github: 'https://github.com/piedpiper',
-	twitter: 'https://twitter.com/piedpiperplc',
-	facebook: 'https://www.facebook.com/piedpipersv',
-	youtube: 'https://www.youtube.com/watch?v=p3RwX06wcBs',
-	linkedin: 'https://www.linkedin.com/company/pied-piper-plc/',
-	locale: 'en-US',
-	primaryColor: '#06a261',
+	// email: 'info@piedpiper.com',
+	locale: 'fa-FA',
+	primaryColor: '#8224e3',
 
 	// supports buttondown, convertkit, emailoctopus, klaviyo, mailchimp, revue
 	// use false or null to disable newsletter
 	// check .env.example for settings needed values for each service
-	newsletter: 'mailchimp',
+	// newsletter: 'mailchimp',
 
 	multiuser: true
 };
@@ -32,13 +27,12 @@ export const user = {
 	// avatar value can be removed for image
 	avatar: '/logo.png',
 	// twitter value can be removed for no link to twitter
-	twitter: 'https://twitter.com/piedpiperplc'
+	twitter: 'https://twitter.com/rouberou'
 };
 
 export const navLinks = [
-	{ href: '/about', title: 'About' },
-	{ href: '/projects', title: 'Projects' },
-	{ href: '/blog', title: 'Blog' }
+	{ href: '/about', title: 'درباره ' },
+	{ href: '/all', title: 'مقالات' }
 ];
 
 export const openGraph = {
@@ -56,7 +50,7 @@ export const analytics = {
 
 // supported providers: giscus, utterances
 export const comment = {
-	provider: 'giscus',
+	// provider: 'giscus',
 	giscus: {
 		// Visit the link below, and follow the steps in the 'configuration' section
 		// https://giscus.app/

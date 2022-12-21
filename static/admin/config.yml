@@ -19,7 +19,7 @@ collections:
     folder: content/authors
     create: true
     slug: '{{slug}}'
-    summary: '{{name}}: {{occupation}}'
+    summary: '{{name}}'
     fields:
       - { label: Name, name: name, widget: string }
       - {
@@ -30,12 +30,10 @@ collections:
           allow_multiple: false,
           required: false
         }
-      - { label: Occupation, name: occupation, widget: string, required: false }
-      - { label: Company, name: company, widget: string, required: false }
       - { label: Email, name: email, widget: string, required: false }
       - { label: Twitter, name: twitter, widget: string, required: false }
       - { label: LinkedIn, name: linkedin, widget: string, required: false }
-      - { label: GitHub, name: github, widget: string, required: false }
+      - { label: Instagram, name: instagram, widget: string, required: false }
       - { label: About, name: 'body', widget: 'markdown' }
   - name: posts # Used in routes, e.g., /admin/collections/blog
     identifier_field: title
@@ -46,6 +44,13 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { label: Title, name: title, widget: string }
       - { label: Subtitle, name: subtitle, widget: string, required: false }
+      - { label: Original Author, name: oauthor, widget: string, required: false }
+      - { label: Original Author - English, name: eauthor, widget: string, required: false }
+      - { label: Title - English, name: etitle, widget: string, required: false }
+      - { label: Subtitle - English, name: esubtitle, widget: string, required: false }
+      - { label: Source, name: source, widget: string }
+      - { label: Source - English, name: esource, widget: string }
+      - { label: Link, name: link, widget: string, required: false }
       - { label: 'Publish Date', name: date, widget: date, default: '', format: 'YYYY-MM-DD' }
       - { label: Draft, name: draft, widget: boolean, default: true, required: false }
       - { label: Summary, name: summary, widget: string, required: false }
@@ -68,25 +73,3 @@ collections:
           display_fields: ['name']
         }
       - { label: Body, name: 'body', widget: 'markdown' }
-  - name: projects # Used in routes, e.g., /admin/collections/blog
-    identifier_field: title
-    label: Projects # Used in the UI
-    folder: content/projects # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - { label: Title, name: title, widget: string }
-      - { label: 'Date', name: date, widget: date, default: '', format: 'YYYY-MM-DD' }
-      - { label: Draft, name: draft, widget: boolean, default: true, required: false }
-      - { label: Description, name: description, widget: string, required: false }
-      - { label: 'Source Link', name: href, widget: string }
-      - { label: 'Tags', name: 'tags', widget: 'list', allow_add: true }
-      - {
-          label: 'Featured Image',
-          name: 'image',
-          widget: 'image',
-          choose_url: true,
-          allow_multiple: false,
-          required: false
-        }
-      - { label: Body, name: 'body', widget: 'markdown', required: false }

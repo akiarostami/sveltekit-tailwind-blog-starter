@@ -3,10 +3,8 @@
 	import Blogs from '$lib/components/Blogs.svelte';
 
 	export let data;
-	const posts = data.posts;
-	const tags = data.tags;
 </script>
 
-<Head title="Blog" />
+<Head title={data.tag} />
 
-<Blogs title="All Posts" {posts} {tags} />
+<Blogs title={data.tag} posts={data.posts} search={false} />
