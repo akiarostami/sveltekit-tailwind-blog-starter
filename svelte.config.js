@@ -1,5 +1,5 @@
 import adapter from '@sveltejs/adapter-auto';
-import preprocess from 'svelte-preprocess';
+import { vitePreprocess } from '@sveltejs/kit/vite';
 import { mdsvex } from 'mdsvex';
 import mdsvexConfig from './mdsvex.config.js';
 
@@ -12,7 +12,7 @@ const config = {
 		// remove this if you're not using comment system
 		csp: { mode: 'auto' }
 	},
-	preprocess: [mdsvex(mdsvexConfig), preprocess({ postcss: true })]
+	preprocess: [mdsvex(mdsvexConfig), vitePreprocess()]
 };
 
 export default config;
