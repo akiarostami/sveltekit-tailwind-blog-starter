@@ -96,9 +96,9 @@ $ npm start
 
 ### Customization
 
-- `tailwind.config.cjs` and `src/base.css` contain the tailwind stylesheet and the default css settings which can be modified to change the overall look and feel of the site.
+- `tailwind.config.cjs` and `src/app.css` contain the tailwind stylesheet and the default css settings which can be modified to change the overall look and feel of the site.
 - All tailwind settings and configurations are available in `tailwind.config.cjs`
-- Site-specific basic css settings are available in `src/base.css`
+- Site-specific basic css settings are available in `src/app.css`
 - All site-related settings, navigation, analytics, mailing list, and commenting system settings are in `src/lib/config.js`
 - Mailing list keys should be set in environment variables. Find the name of the environment variables in `.env.example`
 - `Pre-rendering` is ON for all pages by default. You can change that from `/src/routes/+layout.svelte` file by changing setting `export const prerender = false;`.

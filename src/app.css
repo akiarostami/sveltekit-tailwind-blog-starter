@@ -1,8 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Saira:wght@700&display=swap');
 
 @import 'tailwindcss/base';
-
-@import './base.css';
-
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@layer base {
+
+  html {
+    @apply font-body antialiased;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-title font-extrabold;
+  }
+  
+  .task-list-item::before {
+    @apply hidden;
+  }
+  
+  .task-list-item {
+    @apply list-none;
+  }
+  
+  .footnotes {
+    @apply pt-8 mt-12 border-t border-gray-200 dark:border-gray-700;
+  }
+  
+  .csl-entry {
+    @apply my-5;
+  }
+  
+  /* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */
+  input:-webkit-autofill,
+  input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+  }
+}
