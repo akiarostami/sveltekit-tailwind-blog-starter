@@ -1,10 +1,10 @@
 <script>
-	import IconMail from '$lib/icons/mail.svg';
-	import IconGithub from '$lib/icons/github.svg';
-	import IconFacebook from '$lib/icons/facebook.svg';
-	import IconYoutube from '$lib/icons/youtube.svg';
-	import IconLinkedin from '$lib/icons/linkedin.svg';
-	import IconTwitter from '$lib/icons/twitter.svg';
+	import IconMail from '$lib/icons/mail.svelte';
+	import IconGithub from '$lib/icons/github.svelte';
+	import IconFacebook from '$lib/icons/facebook.svelte';
+	import IconYoutube from '$lib/icons/youtube.svelte';
+	import IconLinkedin from '$lib/icons/linkedin.svelte';
+	import IconTwitter from '$lib/icons/twitter.svelte';
 
 	export let url = '';
 	export let icon = '';
